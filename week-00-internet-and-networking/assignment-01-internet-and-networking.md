@@ -242,7 +242,7 @@ Replace `YOUR-GITHUB-USERNAME` with your GitHub username — that link is your p
 Paste your LinkedIn post URL here:
 
 ```text
-https://www.linkedin.com/posts/saayan-chowdhury-pop2004_saayan-chowdhury-dmi-self-paced-engineer-activity-7503886124856094720-CsHI?utm_source=share&utm_medium=member_desktop&rcm=ACoAAFKNFu0BzZBIwP_0LZpQ5nnIuLGv6FIOItw
+https://www.linkedin.com/posts/shivamsharma-builds_completed-assignment-1-of-the-devops-micro-activity-7504218848993169409-J_c4
 ```
 
 ---
@@ -251,28 +251,33 @@ https://www.linkedin.com/posts/saayan-chowdhury-pop2004_saayan-chowdhury-dmi-sel
 
 Paste the full text of your LinkedIn post here:
 
-Completed the first assignment of the DevOps Micro Internship (DMI) by Pravin Mishra 🚀
+Completed Assignment 1 of the DevOps Micro Internship (DMI) by Pravin Mishra and lead Co-mentor Anjana Muthunayake 🚀 
 
-This assignment was a great introduction to some of the fundamentals that sit behind modern DevOps and software systems. Here’s what I worked through:
+This module covered key fundamental concepts behind modern DevOps and cloud software systems:
 
-1️⃣ ChatGPT
-I started by using ChatGPT as a technical learning assistant to understand concepts from the ground up. Instead of just getting definitions, I focused on breaking technical concepts into simpler explanations and connecting them with real-world examples.
+1️⃣ ChatGPT as a Learning Assistant
+Used targeted prompting to break down complex system concepts into clear mental models and real-world examples.
 
-2️⃣ Internet & Networking
-I learned the basics of how communication happens across the internet, especially the role of protocols, packet switching, IP addresses, TCP/IP and HTTP/HTTPS. Understanding protocols as a set of rules that allow devices to communicate made the rest of the networking concepts much easier to connect.
+2️⃣ Internet & Networking Fundamentals
+Covered data transmission basics:
+Protocols & Packet Switching: How data is chunked, routed, and reassembled across networks.
+TCP/IP & Protocols: Reliable transport mechanics, handshakes, and the security roles of HTTP/HTTPS.
 
 3️⃣ App Architecture
-I explored the difference between two-tier and three-tier application architectures. I understood how a frontend can communicate directly with a database in a two-tier setup, while a three-tier architecture introduces a backend layer for handling APIs, business logic and database communication.
+2-Tier: Direct client-to-database connections (simple, but hard to scale and secure).
+3-Tier: Adds an intermediate Backend/API layer for business logic, security, and independent database scaling.
 
-4️⃣ DNS
-I learned how DNS (Domain Name System) connects human-readable domain names to IP addresses. I also understood why an A record is used when pointing a domain to an IPv4 address.
+4️⃣ DNS Essentials
+How hierarchical name resolution maps domains to IP addresses.
+The explicit role of A records for IPv4 routing and CNAMEs for aliasing.
 
-5️⃣ VS Code Setup
-For the final part, I worked with the Visual Studio Code development environment. Since I already had VS Code installed, this part was more about confirming my existing development setup and being ready to continue with the upcoming hands-on tasks.
+5️⃣ VS Code Environment
+Configured a workstation setup with git integration and CLI extensions ready for infrastructure and scripting tasks.
+Excited to build on these core principles as we move into DevOps pipelines, cloud, containerization, and automation. 🚀
 
-Overall, this assignment strengthened my understanding of the fundamentals behind how applications communicate, how they are structured and how users ultimately access them over the internet. More importantly, it gave me a better foundation to build upon as I move deeper into DevOps, cloud and automation. 🚀
-
-P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. My graded progress is public: https://dmi.pravinmishra.com/s/Saayan-Chowdhury-2004.html · Start your DevOps journey: https://dmi.pravinmishra.com/?utm_source=student&utm_medium=ps-linkedin&utm_campaign=cohort3
+P.S. This post is part of the DevOps Micro Internship (DMI) — Self-Paced Engineer Track — by Pravin Mishra . 
+My graded progress is public: https://lnkd.in/dMzjnr8Q · 
+Start your DevOps journey: https://lnkd.in/deTzcpvf
 
 ---
 
