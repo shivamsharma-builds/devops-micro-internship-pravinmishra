@@ -14,11 +14,11 @@
 
 | | |
 |---|---|
-| **Name** | Pravin Mishra |
-| **LinkedIn** | [pravin-mishra-aws-trainer](https://www.linkedin.com/in/pravin-mishra-aws-trainer/) |
-| **Location** | Helsinki, Finland |
-| **Background** | Cloud, DevOps & AI Consultant |
-| **Goal** | Train 10,000+ DevOps professionals |
+| **Name** | Shivam Sharma |
+| **LinkedIn** | [Shivam Sharma](https://www.linkedin.com/in/shivamsharma-builds/) |
+| **Location** | Jamtara, Jharkhand, India |
+| **Background** | Durgapur Institute of Advanced Technology and Management 155 |
+| **Goal** | Become a professional Agentic AI Engineer |
 
 ---
 
@@ -67,11 +67,11 @@ This is not a course. It is an internship-style program — real deployments, re
 
 **Your stack (uncomment each badge as you earn it):**
 
-<!-- Week 00 → Internet & Networking Basics -->
-<!-- [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) -->
+Week 00 → Internet & Networking Basics
+[![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) 
 
-<!-- Week 01 → Success Mindset -->
-<!-- [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/) -->
+Week 01 → Success Mindset
+[![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)
 
 <!-- Week 02 → Agentic AI with Claude Code -->
 <!-- [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/) -->
@@ -130,8 +130,8 @@ This is not a course. It is an internship-style program — real deployments, re
 
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
-| 00 | Internet & Networking Basics | ⬜ Not Started | ⏳ Pending | — | — |
-| 01 | Success Mindset | ⬜ Not Started | ⏳ Pending | — | — |
+| 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/shivamsharma-builds_completed-assignment-1-of-the-devops-micro-activity-7504218848993169409-J_c4?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFjV8ZYB_WqxLsiWN-Hz_euHg_8jctBR7PI&utm_campaign=copy_link | https://medium.com/@shivamsharma123jmt/demystifying-the-web-what-really-happens-when-you-type-a-url-into-your-browsers-ccabba19859a |
+| 01 | Success Mindset | ✅ completed | ✅ completed | https://www.linkedin.com/posts/shivamsharma-builds_softwareengineering-devops-cloudcomputing-activity-7505476347499188225-_C6m | https://medium.com/@shivamsharma123jmt/from-local-projects-to-production-systems-my-5-year-blueprint-as-a-software-engineer-7374df043b18 |
 | 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
 | 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
