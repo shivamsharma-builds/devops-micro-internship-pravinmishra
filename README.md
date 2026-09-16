@@ -135,7 +135,7 @@ Week 01 → Success Mindset
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | https://www.linkedin.com/posts/shivamsharma-builds_completed-assignment-1-of-the-devops-micro-activity-7504218848993169409-J_c4?utm_source=social_share_send&utm_medium=android_app&rcm=ACoAAFjV8ZYB_WqxLsiWN-Hz_euHg_8jctBR7PI&utm_campaign=copy_link |https://medium.com/@shivamsharma123jmt/demystifying-the-web-what-really-happens-when-you-type-a-url-into-your-browsers-ccabba19859a |
 | 01 | Success Mindset | ✅ completed | ✅ completed | https://www.linkedin.com/posts/shivamsharma-builds_softwareengineering-devops-cloudcomputing-activity-7505476347499188225-_C6m | https://medium.com/@shivamsharma123jmt/from-local-projects-to-production-systems-my-5-year-blueprint-as-a-software-engineer-7374df043b18 |
-| 02 | Agentic AI with Claude Code | ⬜ Not Started | ⏳ Pending | — | — |
+| 02 | Agentic AI with Claude Code | &nbsp; 🔄 In Progress | ⏳ Pending | — | — |
 | 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
