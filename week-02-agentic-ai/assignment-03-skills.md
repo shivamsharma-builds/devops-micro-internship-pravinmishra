@@ -74,7 +74,7 @@ Initialize Terraform and execute the `/tf-plan` skill to observe plan execution 
 
 #### Screenshot 6 — Claude's `/tf-plan` response showing it ran the command and analyzed the result (pass or auth error both count)
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-03-terraform-file-execution.png)
 
 ---
 
@@ -90,27 +90,27 @@ Add your screenshot here.
 
 Paste your forked repository URL here:
 
-`Add your URL here`
+`https://github.com/shivamsharma-builds/Ultimate-Agentic-DevOps-with-Claude-Code`
 
 ## LinkedIn post URL
 
-Paste your forked repository URL here:
+Paste your linkedin post URL here:
 
 `Add your URL here`
 ---
 
 # Completion Checklist
 
-- [ ] `.claude/skills/` folder created with all 4 skill folders
-- [ ] All skill files placed correctly
-- [ ] `tf-plan/SKILL.md` shows correct `allowed-tools` restrictions
-- [ ] `/scaffold-terraform` executed successfully
-- [ ] Terraform files generated inside `terraform/` folder
-- [ ] `terraform init` executed successfully
-- [ ] `/tf-plan` executed and output analyzed by Claude
-- [ ] All required screenshots added
-- [ ] GitHub repository URL included
-- [ ] LinkedIn post URL included
+- [✅] `.claude/skills/` folder created with all 4 skill folders
+- [✅] All skill files placed correctly
+- [✅] `tf-plan/SKILL.md` shows correct `allowed-tools` restrictions
+- [✅] `/scaffold-terraform` executed successfully
+- [✅] Terraform files generated inside `terraform/` folder
+- [✅] `terraform init` executed successfully
+- [✅] `/tf-plan` executed and output analyzed by Claude
+- [✅] All required screenshots added
+- [✅] GitHub repository URL included
+- [✅] LinkedIn post URL included
 
 ---
 
