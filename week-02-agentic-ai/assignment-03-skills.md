@@ -96,7 +96,9 @@ Paste your forked repository URL here:
 
 Paste your linkedin post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/shivamsharma-builds_devops-agenticai-claudecode-activity-7506736211206660096-XdWx`
+
+
 ---
 
 # Completion Checklist
