@@ -97,14 +97,14 @@ Trigger the security auditor agent and analyze the generated security report for
 
 #### Screenshot 4 — The delegation message showing Claude launched the security-auditor
 
-![Task 2 Screenshot](screenshots/assignment-04-agent-security-audit.png)
+![Task 3 Screenshot](screenshots/assignment-04-agent-security-audit.png)
 
 ---
 
 #### Screenshot 5 — Security audit report output
 
-![Task 2 Screenshot](screenshots/assignment-04-agent-security-audit-01.png)
-![Task 2 Screenshot](screenshots/assignment-04-agent-security-audit-02.png)
+![Task 3 Screenshot](screenshots/assignment-04-agent-security-audit-01.png)
+![Task 3 Screenshot](screenshots/assignment-04-agent-security-audit-02.png)
 
 ---
 
@@ -118,8 +118,8 @@ Trigger the cost optimizer agent and review the generated cost optimization repo
 
 #### Screenshot 6 — The full cost optimization report
 
-![Task 2 Screenshot](screenshots/assignment-04-agent-cost-audit.png)
-![Task 2 Screenshot](screenshots/assignment-04-agent-cost-audit-01.png)
+![Task 4 Screenshot](screenshots/assignment-04-agent-cost-audit.png)
+![Task 4 Screenshot](screenshots/assignment-04-agent-cost-audit-01.png)
 
 ---
 
