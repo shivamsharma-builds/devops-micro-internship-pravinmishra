@@ -119,10 +119,11 @@ Prove the logging hook runs after a successful command execution and records Ter
 #### Screenshot 8 — Claude running terraform validate successfully
 
 ![Task 8 Screenshot](screenshots/assignment-06-posttoolhook-blocked.png)
+![Task 8 Screenshot](screenshots/assignment-06-terraform-validate.png)
 
 #### Screenshot 9 — `.claude/deploy.log` showing the logged command
 
-![Task 8 Screenshot](screenshots/assignment-06-terraform-validate.png)
+![Task 8 Screenshot](screenshots/assignment-06-deploy-log.png)
 
 ---
 
