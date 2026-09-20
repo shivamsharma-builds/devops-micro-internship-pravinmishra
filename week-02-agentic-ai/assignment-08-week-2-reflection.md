@@ -46,7 +46,11 @@ You can publish your blog on:
 
 #### Screenshot 1 — Blog published and visible
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/medium-blogpost-01.png)
+![Task 2 Screenshot](screenshots/medium-blogpost-02.png)
+![Task 2 Screenshot](screenshots/medium-blogpost-03.png)
+![Task 2 Screenshot](screenshots/medium-blogpost-04.png)
+![Task 2 Screenshot](screenshots/medium-blogpost-05.png)
 
 ---
 
@@ -54,7 +58,7 @@ Add your screenshot here.
 
 Blog Link:
 
-`Add your URL here`
+`https://medium.com/@shivamsharma123jmt/beyond-chatbots-how-agentic-ai-is-redefining-devops-and-infrastructure-automation-e5bf3e32deae`
 
 ---
 
@@ -70,7 +74,9 @@ Share your Week 2 learning publicly on LinkedIn.
 
 #### Screenshot 2 — LinkedIn post published
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/linkedin-post-01.png)
+![Task 2 Screenshot](screenshots/linkedin-post-02.png)
+![Task 2 Screenshot](screenshots/linkedin-post-03.png)
 
 ---
 
@@ -79,14 +85,44 @@ Add your screenshot here.
 LinkedIn Post Content (copy-paste here):
 
 ```
-Paste your LinkedIn post content here
+Week 2 of the DevOps Micro Internship complete, and my biggest takeaway? AI isn’t just answering questions anymore—it’s taking action. 🤖⚡
+
+Lately, I’ve been looking into how Agentic AI connects with Cloud Engineering and DevOps. The shift from standard chatbots to fully functional AI agents comes down to a simple feedback loop:
+ Understand the goal ➔ Execute ➔ Validate ➔ Refine.
+Rather than just outputting text, an agent can edit files, run commands, and check if its own solution actually works before moving on.
+
+A few critical pieces that make this click:
+Context & Rules: Guidance files (like CLAUDE.md) keep the agent aligned with project standards.
+
+Specialization: Dividing big tasks across custom subagents and modular skills keeps things clean and reliable.
+Safe Connectivity: Protocols like MCP allow AI to talk to external systems, while permissions ensure it stays within guardrails.
+
+Infrastructure as Code: Combining this logic with Terraform and AWS opens up fully automated cloud setups.
+It’s easy to focus solely on the AI model itself, but the real power comes from the ecosystem around it—the tools, context, and guardrails we put in place.
+
+Climbed to #18 on the DMI leaderboard this week, which is a fun milestone as I keep building! 
+Grateful to Pravin Mishra and Anjana Muthunayake for the constant support and direction.
+
+Read my full post at : https://lnkd.in/e77KN42Z
+
+Onto the next challenge! 🚀
+
+A note from me
+
+I’m documenting this journey publicly because I believe learning becomes more valuable when you share what you’re actually building and what you’re learning along the way.
+
+If you’re also exploring AI, software engineering, cloud or DevOps, I’d genuinely love to connect, exchange ideas and learn from each other’s journey.
+
+P.S. This post is part of the DevOps Micro Internship (DMI) with Agentic AI — Cohort 3 — by Pravin Mishra. 
+My graded progress is public: https://lnkd.in/dMzjnr8Q
+Start your DevOps journey: https://lnkd.in/exFfzUSW
 ```
 
 ---
 
 ### LinkedIn Post Link:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/shivamsharma-builds_week-2-of-the-devops-micro-internship-complete-ugcPost-7506369633835339777-j__t`
 
 ---
 
@@ -102,15 +138,15 @@ Paste your LinkedIn post content here
 
 # Completion Checklist
 
-* [ ] Blog written with required structure
-* [ ] Blog includes at least 2–3 Week 2 topics
-* [ ] Blog is publicly accessible
-* [ ] LinkedIn post created
-* [ ] Required P.S. line included
-* [ ] LinkedIn post content copied in submission field
-* [ ] Blog link added
-* [ ] LinkedIn post link added
-* [ ] Screenshots added to GitHub repo
+* [✅] Blog written with required structure
+* [✅] Blog includes at least 2–3 Week 2 topics
+* [✅] Blog is publicly accessible
+* [✅] LinkedIn post created
+* [✅] Required P.S. line included
+* [✅] LinkedIn post content copied in submission field
+* [✅] Blog link added
+* [✅] LinkedIn post link added
+* [✅] Screenshots added to GitHub repo
 
 ---
 

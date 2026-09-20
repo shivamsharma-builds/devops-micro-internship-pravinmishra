@@ -49,7 +49,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 <!-- Add your cohort leaderboard rank here as you progress -->
 
-> 🥇 Cohort 3 Rank: **#14** <!-- Update this each week -->
+> 🥇 Cohort 3 Rank: **#09** <!-- Update this each week -->
 
 ---
 
@@ -69,6 +69,7 @@ This is not a course. It is an internship-style program — real deployments, re
 
 [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) 
 [![Week 01 – Mindset](./badges/week-01.svg)](./week-01-success-mindset/)
+[![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/)
 
 <!-- Week 00 → Internet & Networking Basics
 [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) 
@@ -134,9 +135,9 @@ Week 01 → Success Mindset
 | Week | Topic | Status | Assignment | LinkedIn Post | Blog Post |
 |------|-------|--------|------------|---------------|-----------|
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_completed-assignment-1-of-the-devops-micro-activity-7504218848993169409-J_c4) | [Blog post](https://medium.com/@shivamsharma123jmt/from-curiosity-to-building-intelligent-systems-my-journey-into-ai-software-and-devops-ed57149b458a) |
-| 01 | Success Mindset | ✅ completed | ✅ completed | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_softwareengineering-devops-cloudcomputing-activity-7505476347499188225-_C6m) | [Blog post](https://medium.com/@shivamsharma123jmt/from-local-projects-to-production-systems-my-5-year-blueprint-as-a-software-engineer-7374df043b18) |
-| 02 | Agentic AI with Claude Code | &nbsp; 🔄 In Progress | ⏳ Pending | [LinkedIn post](https://www.linkedin.com/posts/shivamsharma-builds_week-2-of-the-devops-micro-internship-complete-activity-7506369635848556545-s4sU)| [Blog post](https://medium.com/@shivamsharma123jmt/beyond-chatbots-how-agentic-ai-is-redefining-devops-and-infrastructure-automation-e5bf3e32deae)|
-| 03 | Linux & Bash for DevOps | ⬜ Not Started | ⏳ Pending | — | — |
+| 01 | Success Mindset | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_softwareengineering-devops-cloudcomputing-activity-7505476347499188225-_C6m) | [Blog post](https://medium.com/@shivamsharma123jmt/from-local-projects-to-production-systems-my-5-year-blueprint-as-a-software-engineer-7374df043b18) |
+| 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | [LinkedIn post](https://www.linkedin.com/posts/shivamsharma-builds_week-2-of-the-devops-micro-internship-complete-activity-7506369635848556545-s4sU)| [Blog post](https://medium.com/@shivamsharma123jmt/beyond-chatbots-how-agentic-ai-is-redefining-devops-and-infrastructure-automation-e5bf3e32deae)|
+| 03 | Linux & Bash for DevOps | 🔄 In Progress | ⏳ Pending | — | — |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
