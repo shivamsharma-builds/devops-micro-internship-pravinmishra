@@ -144,7 +144,7 @@ Make sure your published post includes:
 
 #### Screenshot 7 — Published LinkedIn post showing your post content and leaderboard progress link visible
 
-Add your screenshot here.
+![Task 5 Screenshot](screenshots/assignment-04-linkedin.png)
 
 ---
 
