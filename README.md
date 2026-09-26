@@ -137,7 +137,7 @@ Week 01 → Success Mindset
 | 00 | Internet & Networking Basics | ✅ Completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_completed-assignment-1-of-the-devops-micro-activity-7504218848993169409-J_c4) | [Blog post](https://medium.com/@shivamsharma123jmt/from-curiosity-to-building-intelligent-systems-my-journey-into-ai-software-and-devops-ed57149b458a) |
 | 01 | Success Mindset | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_softwareengineering-devops-cloudcomputing-activity-7505476347499188225-_C6m) | [Blog post](https://medium.com/@shivamsharma123jmt/from-local-projects-to-production-systems-my-5-year-blueprint-as-a-software-engineer-7374df043b18) |
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | [LinkedIn post](https://www.linkedin.com/posts/shivamsharma-builds_week-2-of-the-devops-micro-internship-complete-activity-7506369635848556545-s4sU)| [Blog post](https://medium.com/@shivamsharma123jmt/beyond-chatbots-how-agentic-ai-is-redefining-devops-and-infrastructure-automation-e5bf3e32deae)|
-| 03 | Linux & Bash for DevOps | 🔄 In Progress | ⏳ Pending | — | — |
+| 03 | Linux & Bash for DevOps | 🔄 In Progress | ⏳ Pending | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_devops-aws-cloudcomputing-share-7509501262288211968-Z3mH) | [Blog post](https://medium.com/@shivamsharma123jmt/step-by-step-guide-deploying-a-personalised-react-application-on-aws-ec2-using-nginx-80357b35ffb7) |
 | 04 | Git & GitHub | ⬜ Not Started | ⏳ Pending | — | — |
 | 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
