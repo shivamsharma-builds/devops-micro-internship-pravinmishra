@@ -20,25 +20,25 @@ Verify that the deployed React application is reachable from the browser and con
 
 #### Screenshot 1 — Browser showing the React app with your Full Name visible on the UI
 
-Add your screenshot here.
+![Task 1 Screenshot](screenshots/assignment-02-react-app-build-browser.png)
 
 ---
 
 #### Screenshot 2 — Output of `ip a`
 
-Add your screenshot here.
+![Task 1 Screenshot](screenshots/assignment-03-ip.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -tulpen`
 
-Add your screenshot here.
+![Task 1 Screenshot](screenshots/assignment-03-tulpen.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo ufw status`
 
-Add your screenshot here.
+![Task 1 Screenshot](screenshots/assignment-03-status.png)
 
 ---
 
@@ -48,19 +48,36 @@ Answer the following in your own words:
 
 **1. What proves Nginx is listening on 0.0.0.0:80?**
 
-Write your answer here.
+The ss -tulpen output shows a TCP socket with:
+
+* State: LISTEN
+* Local Address:Port: 0.0.0.0:80
+* Process:  users:(("nginx",pid=8193,fd=5),("nginx",pid=8192,fd=5),("nginx",pid=8191,fd=5))
+
+This proves Nginx is actively listening on port 80 across all network interfaces (0.0.0.0 = all IPv4 addresses). The process identifiers (pids 29161 and 29160) confirm the Nginx worker processes are bound to this port.
 
 ---
 
 **2. What proves SSH is active on port 22?**
 
-Write your answer here.
+The ss -tulpen output shows a TCP socket with:
+
+* State: LISTEN
+* Local Address:Port: 0.0.0.0:22
+* Process:   users:(("sshd",pid=693,fd=3),("systemd",pid=1,fd=163))
+
+This proves SSH daemon (sshd) is actively listening on port 22 across all network interfaces. The process ID 31810 confirms the SSH service is running and bound to the standard SSH port.
 
 ---
 
 **3. Did you find any unexpected open ports? Explain briefly.**
 
-Write your answer here.
+Yes, there are a few ports that may be unexpected depending on your intended server configuration:
+
+* TCP 4096 - Multiple instances associated with "system-resolve" service (systemd-resolved). This is a DNS resolution service and may be expected on a system with networking needs.
+* UDP 1323 - Chrony NTP service (Network Time Protocol) for time synchronization. This is typically expected on servers but could be unexpected if you don't need time sync services.
+
+If this server is intended to run only Nginx and SSH, these system services could be considered unexpected. However, they are standard Linux system services and generally harmless. The core expected services (Nginx on 80, SSH on 22) are confirmed and functioning correctly.
 
 ---
 
@@ -74,19 +91,19 @@ Verify that Nginx is properly installed, running, enabled at boot, and safely co
 
 #### Screenshot 1 — Output of `systemctl status nginx --no-pager`
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/assignment-03-nginx-status.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t`
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/assignment-03-nginx-t.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo ss -lptn '( sport = :80 )'`
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/assignment-03-nginx-port.png)
 
 ---
 
@@ -96,13 +113,51 @@ Answer the following in your own words:
 
 **1. What happens if Nginx fails to restart in production?**
 
-Write your answer here.
+If Nginx fails to restart in production, several things occur:
 
+* Immediate service disruption: Existing connections are maintained, but the process stops. If the old Nginx process is killed before restart completes, traffic drops immediately until the service recovers.
+* Traffic loss: New requests encounter connection timeouts or refused connections. Users see 503 Service Unavailable or connection errors.
+* Cascading failures: Upstream services, load balancers, and monitoring systems alert on the outage. Dependent applications that rely on your API/web service fail.
+* Operational incident: The incident is logged; escalations trigger; on-call engineers respond. Customer impact is immediate and measurable.
+* Root cause uncertainty: The restart failure could indicate syntax errors in nginx.conf, permission issues, port conflicts, missing SSL certificates, or resource exhaustion—all need rapid diagnosis.
+
+The key issue: restart changes are not atomic. If the reload/restart is interrupted or misconfigured, the entire service goes down until recovery.
 ---
 
 **2. What's your basic rollback plan?**
 
-Write your answer here.
+A basic rollback plan for Nginx includes:
+
+Before deployment:
+
+* Backup the current nginx.conf and any site config files (e.g., /etc/nginx/sites-enabled/)
+* Test new config syntax with sudo nginx -t in a staging environment first
+* Have the old config file tagged/versioned in version control
+
+During deployment (graceful approach):
+
+* Use sudo nginx -s reload instead of restart (reloads config without killing connections)
+* Monitor logs for errors: sudo tail -f /var/log/nginx/error.log
+* Check service status: sudo systemctl status nginx
+
+If deployment fails:
+
+1. Stop the failed Nginx process: sudo systemctl stop nginx
+2. Restore the previous nginx.conf from backup/version control
+3. Verify syntax: sudo nginx -t
+4. Restart with known-good config: sudo systemctl start nginx
+5. Verify connectivity and logs
+
+For quick rollback (minutes matter):
+
+* Keep a known-good config version immediately accessible
+* Run sudo nginx -s reload first for config changes (safer than restart)
+* If that fails, restore + restart as fallback
+* Alert monitoring systems of the incident
+
+Automation angle: Store nginx.conf in version control (Git), use Infrastructure-as-Code (Terraform/Ansible) to manage deployments, and implement a pre-flight check (syntax test + staging validation) before touching production.
+
+Key principle: Always have a way to get back to the last known-good state within seconds, not hours.
 
 ---
 
@@ -116,19 +171,19 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 #### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/assignment-03-nginx-tail.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/assignment-03-nginx-tail-error.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/assignment-03-journal.png)
 
 ---
 
@@ -141,19 +196,45 @@ Answer the following in your own words:
 - If yes, mention 1–2 example error lines from the logs and explain what each one means in simple terms.
 - If no, explain what it means if the error log is empty or shows no recent errors during your check.
 
-Write your answer here.
+No, there were no errors. The error log contains only one line:
+
+`2026/08/12 19:33:46 [notice] 28455#28455: using inherited sockets from "5;6;"`
+
+This is a [notice] level message, not an error. It's informational and means Nginx successfully inherited socket file descriptors (5 and 6) from the systemd service manager during startup. This is normal and expected when Nginx starts via systemctl. A notice is just Nginx reporting routine operational information—not a problem.
 
 ---
 
 **2. If there were no errors, what does that indicate about the system?**
 
-Write your answer here.
+An empty/clean error log with no errors, warnings, or critical messages indicates the system is healthy and functioning normally. Specifically:
+
+* Nginx is running without issues—no configuration problems, no crashes, no permission errors
+* Requests are being processed successfully without conflicts or resource problems
+* No SSL/TLS certificate errors, port binding issues, or worker process failures
+* The application is stable and not generating warnings
+
+This is a good sign for production. Your Nginx deployment is operationally sound.
 
 ---
 
 **3. Based on the access logs, were your curl requests visible in the log entries? What does that prove about traffic flow?**
 
-Write your answer here.
+No, the curl requests are not visible in the access log. Instead, the logs show real browser traffic from two external IP addresses:
+
+* 83.229.26.237 (accessed on Aug 12 at 19:50:45)
+* 187.14.48.90 (accessed on Aug 13 at 21:15:53 and 21:16:52)
+
+The user agents show Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) with Chrome and Safari browsers—these are actual users accessing your React app, not curl requests.
+
+This proves:
+
+* Traffic is flowing correctly from external sources to your Nginx server
+* The application is reachable on the public internet (IP 3.144.191.181)
+* Static assets are being served (CSS, JavaScript, manifest, favicon) with HTTP 200 responses
+* Caching is working (304 Not Modified responses on subsequent requests)
+* Your deployment is live and accessible to real users
+
+The absence of curl commands is expected—curl is typically used for local testing or scripted requests, not for logging real user traffic.
 
 ---
 
