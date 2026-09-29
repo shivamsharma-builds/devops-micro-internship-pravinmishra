@@ -171,19 +171,19 @@ Verify real traffic flow and analyze logs to understand system behavior and erro
 
 #### Screenshot 1 — Output of `sudo tail -n 30 /var/log/nginx/access.log`
 
-![Task 2 Screenshot](screenshots/assignment-03-nginx-tail.png)
+![Task 3 Screenshot](screenshots/assignment-03-nginx-tail.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo tail -n 30 /var/log/nginx/error.log`
 
-![Task 2 Screenshot](screenshots/assignment-03-nginx-tail-error.png)
+![Task 3 Screenshot](screenshots/assignment-03-nginx-tail-error.png)
 
 ---
 
 #### Screenshot 3 — Output of `sudo journalctl -u nginx --no-pager -n 50`
 
-![Task 2 Screenshot](screenshots/assignment-03-journal.png)
+![Task 3 Screenshot](screenshots/assignment-03-journal.png)
 
 ---
 
@@ -248,25 +248,25 @@ Assess server capacity and detect potential performance or failure risks.
 
 #### Screenshot 1 — Output of `uptime`
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-03-uptime.png)
 
 ---
 
 #### Screenshot 2 — Output of `free -h`
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-03-free-h.png)
 
 ---
 
 #### Screenshot 3 — Output of `df -h`
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-03-df-h.png)
 
 ---
 
 #### Screenshot 4 — Output of `sudo du -sh /var/* | sort -h`
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-03-sort-h.png)
 
 ---
 
@@ -276,13 +276,73 @@ Answer the following in your own words:
 
 **1. Which resource looks most critical right now? (CPU/load, memory, or disk) Explain why.**
 
-Write your answer here.
+Based on the `top` output, **none of the visible resources are critical right now—the system is very healthy**. Here's the breakdown:
+
+**CPU**: 0.7% utilization
+
+- Extremely low. The system is barely working.
+
+**Memory**: 223M/1.91G (≈11.6% utilized)
+
+- Very comfortable. Plenty of headroom. No memory pressure.
+
+**Load Average**: 0.07, 0.11, 0.09 (all under 1.0)
+
+- Excellent. Load average below 1.0 means the system has spare processing capacity.
+- On a single-core system, load <1.0 is ideal.
+
+**Uptime**: 13:38 day, 04:22:10
+
+- System has been stable for over a day with no restarts.
+
+**What's least critical:** Disk usage is not shown in this `top` output, so I cannot assess disk utilization. However, AWS Free Tier instances typically have 30GB of storage, which should be sufficient for a basic Nginx/React app unless you're storing large log files or media.
+
+**Conclusion**: If I had to pick the one to monitor most closely going forward, it would be **disk**—because disk fills unexpectedly (log rotation issues, media uploads, etc.), while CPU and memory are currently negligible.
 
 ---
 
 **2. What happens if disk becomes 100% full in a production server?**
 
-Write your answer here.
+If disk reaches 100% in production, several critical failures cascade:
+
+**Immediate impacts:**
+
+- **Nginx cannot write logs** → error.log and access.log stop updating
+- **New files cannot be created** → write operations fail with "No space left on device" errors
+- **Temporary files fail** → /tmp fills up, breaking application functionality
+- **Database writes fail** (if running database) → data corruption risk
+
+**Application failures:**
+
+- Session data can't be saved → users get logged out unexpectedly
+- Uploaded files cannot be processed
+- Caching mechanisms break
+- Any background jobs writing files crash
+
+**System-level breakdown:**
+
+- SSH connections may fail (system can't write auth logs)
+- Systemd services cannot write state files → random service failures
+- Kernel panic risk if critical system partitions are full
+- Recovery becomes extremely difficult
+
+**How to recover:**
+
+1. SSH in (if still accessible) and identify large files/directories: `du -sh /*`
+2. Delete old logs, temp files, or cache: `rm -rf /var/log/nginx/*.log*`
+3. Clear package cache: `apt clean`
+4. Delete old application data or uploads
+5. Implement automated log rotation (logrotate)
+
+**Prevention:**
+
+- Monitor disk usage proactively with CloudWatch
+- Set up log rotation with daily/weekly limits
+- Use `df -h` regularly to track growth
+- Set alerts at 80% disk usage
+- Consider EBS volume expansion before hitting 100%
+
+**Bottom line**: A full disk isn't just inconvenient—it's a critical production outage. Always monitor and alert at 80–85% utilization.
 
 ---
 
@@ -296,19 +356,19 @@ Ensure the correct React build is deployed and Nginx is serving it properly.
 
 #### Screenshot 1 — Output of `ls -lah /var/www/html | head -n 20`
 
-Add your screenshot here.
+![Task 5 Screenshot](screenshots/assignment-03-ls-lah.png)
 
 ---
 
 #### Screenshot 2 — Output of `grep -R "Deployed by" -n /var/www/html 2>/dev/null | head`
 
-Add your screenshot here.
+![Task 5 Screenshot](screenshots/assignment-03-grep-r.png)
 
 ---
 
 #### Screenshot 3 — Output of `grep -n "try_files" /etc/nginx/sites-available/default`
 
-Add your screenshot here.
+![Task 5 Screenshot](screenshots/assignment-03-grep-n.png)
 
 ---
 
@@ -318,7 +378,7 @@ Answer the following in your own words:
 
 **1. How do you confirm that the correct version of the application is deployed?**
 
-Write your answer here.
+Deployment is confirmed through three independent checks. First, `ls -lah /var/www/html` shows that `index.html` and the `static/` directory are present, confirming that a production React build was copied to the Nginx web root. Second, `grep -R "Deployed by" /var/www/html` finds the string "Deployed by Javeson Francois Liu" inside the bundled JavaScript, confirming that the personalized version of the application was built and deployed — not a generic or stale version. Third, `grep -n "try_files" /etc/nginx/sites-available/default` confirms that Nginx is configured with `try_files $uri /index.html`, which is required for React's client-side routing to work correctly on page refresh. Together, these three checks verify that the right build artifact is in the right location with the right server configuration.
 
 ---
 
@@ -332,19 +392,19 @@ Simulate a real-world Nginx misconfiguration and recover the service safely.
 
 #### Screenshot 1 — Output of `sudo nginx -t` showing the syntax error (broken config)
 
-Add your screenshot here.
+![Task 6 Screenshot](screenshots/assignment-03-task-06-01.png)
 
 ---
 
 #### Screenshot 2 — Output of `sudo nginx -t` showing syntax ok (fixed config)
 
-Add your screenshot here.
+![Task 6 Screenshot](screenshots/assignment-03-task-06-02.png)
 
 ---
 
 #### Screenshot 3 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+![Task 6 Screenshot](screenshots/assignment-03-task-06-03.png)
 
 ---
 
@@ -354,19 +414,19 @@ Answer the following in your own words:
 
 **1. What caused the configuration failure?**
 
-Write your answer here.
+Removing the semicolon `;` from the end of the `try_files $uri /index.html` directive caused the configuration failure. In Nginx configuration syntax, every directive must end with a semicolon. Without it, the Nginx config parser cannot determine where the directive ends, resulting in a syntax error that prevents the configuration from loading.
 
 ---
 
 **2. How did you fix the issue?**
 
-Write your answer here.
+The fix was to re-open the Nginx configuration file with `sudo nano /etc/nginx/sites-available/default` and restore the semicolon at the end of `try_files $uri /index.html;`. After saving the file, `sudo nginx -t` was run to validate the syntax, which returned "syntax is ok" and "test is successful". The service was then restarted with `sudo systemctl restart nginx` and verified with `curl -I http://43.216.24.74` returning HTTP 200 OK.
 
 ---
 
 **3. How can you avoid this kind of issue in real production systems?**
 
-Write your answer here.
+In real production systems, configuration changes should never be made directly on the live server. The standard approach is to version-control all Nginx configuration files in a Git repository, make changes in a branch, test them in a staging environment, and only apply them to production after validation. Additionally, always run `sudo nginx -t` before applying any configuration change, and use configuration management tools such as Ansible or Terraform to enforce consistent, reviewed configuration across all servers. A deployment pipeline that runs `nginx -t` as a pre-flight check before reloading the service provides an automated safety net.
 
 ---
 
@@ -380,13 +440,13 @@ Simulate missing deployment content and recover the application safely.
 
 #### Screenshot 1 — Output of `curl -I http://<public-ip>` showing failure (non-200 response)
 
-Add your screenshot here.
+![Task 7 Screenshot](screenshots/assignment-03-task-07-01.png)
 
 ---
 
 #### Screenshot 2 — Output of `curl -I http://<public-ip>` confirming recovery (200 OK)
 
-Add your screenshot here.
+![Task 7 Screenshot](screenshots/assignment-03-task-07-02.png)
 
 ---
 
@@ -396,19 +456,19 @@ Answer the following in your own words:
 
 **1. What caused the application to break in this scenario?**
 
-Write your answer here
+Moving `/var/www/html` to `/var/www/html_backup` and replacing it with an empty directory caused the failure. Nginx found the `root` directory at `/var/www/html` but could not locate `index.html` inside the empty folder. With no files to serve and the `try_files` directive finding nothing to fall back to, Nginx returned `HTTP/1.1 500 Internal Server Error`. The empty directory existing is what causes a 500 rather than 404 — Nginx can read the directory but cannot process the request to completion.
 
 ---
 
 **2. How did you fix the issue and restore the application?**
 
-Write your answer here.
+The fix was to remove the empty `/var/www/html` placeholder directory, restore the original deployment from the backup using `sudo mv /var/www/html_backup /var/www/html`, and then restart Nginx with `sudo systemctl restart nginx`. After the restart, `curl -I http://43.216.24.74` returned HTTP 200 OK, confirming the application was serving correctly again.
 
 ---
 
 **3. What steps would you take to prevent this kind of issue in real production systems?**
 
-Write your answer here.
+In real production, the web root should never be modified directly on the live server. Deployments should use atomic swaps — building the new version in a separate directory, validating it, and then using a symlink switch (`ln -sfn /var/www/html_v2 /var/www/html`) so the change is instantaneous and the previous version remains as a fallback. Automated deployment pipelines should include health checks that verify the application returns 200 OK before considering a deployment successful. Infrastructure backups and snapshot policies ensure that even in worst-case scenarios, a known-good state can be restored quickly.
 
 ---
 
@@ -424,31 +484,31 @@ Answer the following in your own words:
 
 **1. Why is SSH key-based authentication more secure than sharing passwords?**
 
-Write your answer here.
+SSH key-based authentication uses asymmetric cryptography — a private key that never leaves your machine and a public key stored on the server. Even if an attacker intercepts the network traffic or compromises the server's public key list, they cannot derive the private key. Passwords, by contrast, are vulnerable to brute-force attacks, credential stuffing, phishing, and interception if transmitted over insecure channels. Keys are also longer and mathematically harder to guess than any humanly memorable password. Password-sharing additionally creates audit trail problems — you cannot tell which person used a shared password.
 
 ---
 
 **2. Why should only required ports be open on a production server?**
 
-Write your answer here.
+Every open port is an exposed attack surface. A service listening on an unnecessary port can be targeted for exploitation, denial-of-service, or unauthorized access. Minimising open ports reduces the blast radius of any single vulnerability — an attacker who finds a flaw in a running service can only exploit it if the port is reachable. In the security principle of least privilege applied to networking, only traffic that is required for the application to function should be permitted. For this deployment, only ports 22 (SSH) and 80 (HTTP) are needed.
 
 ---
 
 **3. Why is it important for Nginx to be enabled on boot?**
 
-Write your answer here.
+If Nginx is not enabled as a systemd service, it will not start automatically when the server reboots. Any reboot — whether planned maintenance, a kernel update, or an unexpected crash — would leave the application inaccessible until someone manually starts Nginx. In production, server reboots are routine, and auto-starting critical services ensures the application recovers automatically without requiring human intervention, reducing mean time to recovery (MTTR) and meeting availability SLAs.
 
 ---
 
 **4. What are the risks of sharing secrets, keys, or credentials publicly?**
 
-Write your answer here.
+Publicly shared credentials are immediately actionable by anyone who finds them. Exposed AWS access keys have led to hundreds of thousands of dollars in fraudulent compute charges within hours of being committed to a public GitHub repository. SSH private keys allow full server access. API tokens can be used to exfiltrate data, send spam, or destroy cloud resources. Automated bots continuously scan public code repositories for credential patterns. Once a secret is public, it must be considered fully compromised and rotated immediately — even if it was only exposed for seconds.
 
 ---
 
 **5. Why should cloud resources be stopped or terminated when they are no longer needed?**
 
-Write your answer here.
+Cloud resources are billed by usage. An EC2 instance left running accumulates compute charges every hour, even when idle. At scale, forgotten resources — "orphaned" instances, unattached EBS volumes, unused Elastic IPs — represent significant wasted spend. Beyond cost, running instances increase the attack surface: an idle server still receives network traffic and can be exploited if its software becomes outdated. Terminating resources when they are no longer needed reduces cost, shrinks the attack surface, and keeps cloud accounts clean and auditable.
 
 ---
 
@@ -460,13 +520,14 @@ Write your answer here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/shivamsharma-builds_devops-aws-cloudcomputing-share-7510582091764371457-3qmx`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Task 8 Screenshot](screenshots/assignment-03-linkedin.png)
+
 
 ---
 
@@ -480,17 +541,17 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Screenshots (browser, ip a, ss -tulpen, ufw status) + Notes answered
-- [ ] Task 2: Screenshots (nginx status, nginx -t, ss port 80) + Notes answered
-- [ ] Task 3: Screenshots (access log, error log, journalctl) + Notes answered
-- [ ] Task 4: Screenshots (uptime, free -h, df -h, du -sh) + Notes answered
-- [ ] Task 5: Screenshots (ls html, grep deployed by, grep try_files) + Notes answered
-- [ ] Task 6: Screenshots (nginx -t fail, nginx -t pass, curl recovery) + Notes answered
-- [ ] Task 7: Screenshots (curl failure, curl recovery) + Notes answered
-- [ ] Task 8: Security & Reliability Notes answered
-- [ ] LinkedIn post published and URL submitted
-- [ ] Full Name visible in all required screenshots
-- [ ] No sensitive data exposed
+- [✅] Task 1: Screenshots (browser, ip a, ss -tulpen, ufw status) + Notes answered
+- [✅] Task 2: Screenshots (nginx status, nginx -t, ss port 80) + Notes answered
+- [✅] Task 3: Screenshots (access log, error log, journalctl) + Notes answered
+- [✅] Task 4: Screenshots (uptime, free -h, df -h, du -sh) + Notes answered
+- [✅] Task 5: Screenshots (ls html, grep deployed by, grep try_files) + Notes answered
+- [✅] Task 6: Screenshots (nginx -t fail, nginx -t pass, curl recovery) + Notes answered
+- [✅] Task 7: Screenshots (curl failure, curl recovery) + Notes answered
+- [✅] Task 8: Security & Reliability Notes answered
+- [✅] LinkedIn post published and URL submitted
+- [✅] Full Name visible in all required screenshots
+- [✅] No sensitive data exposed
 
 ---
 
