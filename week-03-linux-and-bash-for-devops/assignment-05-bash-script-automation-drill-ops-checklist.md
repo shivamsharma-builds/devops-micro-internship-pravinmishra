@@ -384,25 +384,29 @@ Answer the following in your own words:
 
 **1. What is a function in Bash?**
 
-Add your answer here.
+A function in Bash is a named block of code that can be defined once and called by name as many times as needed. It groups related commands under a label, separating distinct responsibilities into their own logical units. Functions are defined with the syntax `function_name() { commands; }` and called simply by writing the function name. They make scripts modular — each function does one thing clearly.
 
 ---
 
 **2. Why are functions useful in scripts?**
 
-Add your answer here.
+Functions prevent code duplication and improve readability. If the same sequence of commands is needed in multiple places, writing it as a function means you maintain it in one location. When the logic needs to change, you update the function once and every call benefits automatically. Functions also make it easier to test individual parts of a script in isolation and to understand what a script does at a glance — reading a list of function calls at the bottom (`print_header`, `print_user_details`, `check_files`, `print_tools`) gives an immediate high-level picture of the script's flow.
 
 ---
 
 **3. Which functions did you create in this script?**
 
-Add your answer here.
+Four functions were created:
+- `print_header` — prints a formatted separator and the assignment name
+- `print_user_details` — prints the full name and assignment name
+- `check_files` — uses `-d` and `-f` conditionals to verify the test directory and file exist
+- `print_tools` — loops over the tools array and prints each tool name
 
 ---
 
 **4. How does this final script combine variables, arrays, loops, conditionals, files, and functions?**
 
-Add your answer here.
+The script demonstrates all six concepts working together. Variables (`full_name`, `assignment_name`, `directory_path`, `file_path`) store reusable values. An array (`tools`) holds a list of tool names. The `print_tools` function uses a `for` loop to iterate over the array. The `check_files` function uses file test conditionals (`-d`, `-f`) inside `if-else` blocks to verify that the test directory and file exist. All of this code is organized into four named functions, which are then called in sequence at the bottom of the script. This structure mirrors how real DevOps automation scripts are built: modular, readable, and able to handle both expected and unexpected states.
 
 ---
 
@@ -414,13 +418,13 @@ Add your answer here.
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/shivamsharma-builds_devops-nginx-ubuntu-share-7511310356401659904-1e-k`
 
 ---
 
 #### Screenshot — Published LinkedIn post
 
-Add your screenshot here.
+![Task 9 Screenshot](screenshots/assignment-04-linkedin.png)
 
 ---
 
