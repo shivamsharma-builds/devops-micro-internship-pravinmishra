@@ -270,25 +270,25 @@ Answer the following in your own words:
 
 **1. What does `-d` check in Bash?**
 
-Add your answer here.
+`-d` is a file test operator that returns true if the given path exists and is a directory. In an `if [ -d "$path" ]` condition, Bash checks whether a directory (not a file) exists at that path. If the path is a regular file or does not exist at all, the condition evaluates to false.
 
 ---
 
 **2. What does `-f` check in Bash?**
 
-Add your answer here.
+`-f` is a file test operator that returns true if the given path exists and is a regular file (not a directory, device, or symbolic link). In an `if [ -f "$path" ]` condition, Bash confirms that a readable, non-directory file exists at the specified location. This is used to verify that a configuration file, log file, or data file is present before attempting to read or process it.
 
 ---
 
 **3. Why should file and directory paths be stored in variables?**
 
-Add your answer here.
+Storing paths in variables means the path is defined once at the top of the script. If the path changes — for example, if the deployment moves from `/test-folder` to `/opt/test-folder` — you update one variable assignment rather than every occurrence in the script body. It also makes the script more readable: `$directory_path` communicates intent clearly, whereas a repeated literal string buried in multiple `if` blocks is harder to scan and maintain.
 
 ---
 
 **4. What happens if the file does not exist?**
 
-Add your answer here.
+When the file does not exist, the `-f` test returns false and the `else` branch executes, printing the "File does not exist" message. The script continues running normally — no crash or error occurs. This is intentional defensive scripting: the conditional handles both outcomes explicitly so the operator always gets clear feedback whether the file is present or missing, rather than the script failing silently or with a cryptic error.
 
 ---
 
@@ -302,25 +302,25 @@ Use if-else conditionals to make decisions based on a variable value.
 
 #### Screenshot 1 — Content of `score-check.sh` with `score=85`
 
-Add your screenshot here.
+![Task 7 Screenshot](screenshots/assignment-05-task-0701.png)
 
 ---
 
 #### Screenshot 2 — Output showing `Result: Pass`
 
-Add your screenshot here.
+![Task 7 Screenshot](screenshots/assignment-05-task-0702.png)
 
 ---
 
 #### Screenshot 3 — Content of `score-check.sh` with `score=55`
 
-Add your screenshot here.
+![Task 7 Screenshot](screenshots/assignment-05-task-0703.png)
 
 ---
 
 #### Screenshot 4 — Output showing `Result: Retry`
 
-Add your screenshot here.
+![Task 7 Screenshot](screenshots/assignment-05-task-0704.png)
 
 ---
 
@@ -330,25 +330,25 @@ Answer the following in your own words:
 
 **1. What is the purpose of if-else in Bash?**
 
-Add your answer here.
+`if-else` allows a script to execute different code paths depending on whether a condition is true or false. Without it, a script can only execute commands in a fixed sequence. With `if-else`, the script can evaluate a value, a comparison, or a file state, and take the appropriate action for each outcome. In production automation, this is how scripts decide whether to send an alert, skip a step, retry an operation, or exit with an error code.
 
 ---
 
 **2. What does `-ge` mean?**
 
-Add your answer here.
+`-ge` stands for "greater than or equal to" and is an arithmetic comparison operator used inside `[ ]` test expressions in Bash. Unlike `>=` which compares strings, `-ge` compares integers. `[ "$score" -ge 70 ]` evaluates to true if `$score` is numerically greater than or equal to 70. Other arithmetic operators are `-gt` (greater than), `-lt` (less than), `-le` (less than or equal to), `-eq` (equal), and `-ne` (not equal).
 
 ---
 
 **3. Why should conditions be tested with different values?**
 
-Add your answer here.
+Testing with a single value only proves that one path works. A condition has at least two outcomes (true and false), and both branches must be verified to confirm the logic is correct. Testing with `score=85` confirms the Pass branch executes; testing with `score=55` confirms the Retry branch executes. In real automation scripts, untested branches can contain bugs that only surface in production, at the worst possible time. Boundary values (like `score=70` exactly) should also be tested to verify edge case behavior.
 
 ---
 
 **4. How can conditionals help in automation scripts?**
 
-Add your answer here.
+Conditionals turn a static sequence of commands into an intelligent, self-directing script. An automation script can check whether a service is running before attempting a restart, verify a backup file exists before deleting the source, skip a deployment step if the build already succeeded, or send an alert only when disk usage exceeds a threshold. Without conditionals, scripts either fail on unexpected state or require human intervention for every decision. With conditionals, the same script handles both the happy path and failure cases automatically.
 
 ---
 
@@ -362,19 +362,19 @@ Create a final Bash script using functions to organize reusable code.
 
 #### Screenshot 1 — Content of `final-automation.sh`
 
-Add your screenshot here.
+![Task 8 Screenshot](screenshots/assignment-05-task-0801.png)
 
 ---
 
 #### Screenshot 2 — Output of `./final-automation.sh`
 
-Add your screenshot here.
+![Task 8 Screenshot](screenshots/assignment-05-task-0802.png)
 
 ---
 
 #### Screenshot 3 — Output of `ls -lah` showing all created scripts
 
-Add your screenshot here.
+![Task 8 Screenshot](screenshots/assignment-05-task-0803.png)
 
 ---
 
