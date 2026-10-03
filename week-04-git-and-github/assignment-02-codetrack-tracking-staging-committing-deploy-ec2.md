@@ -146,13 +146,13 @@ Install and start Nginx on your EC2 instance, then copy `index.html` and `style.
 
 #### Screenshot 14 — Output of `curl -I http://localhost` showing `HTTP/1.1 200 OK`
 
-Add your screenshot here.
+![Task 7 Screenshot](screenshots/assignment-02-task-0702.png)
 
 ---
 
 #### Screenshot 15 — Browser showing the CodeTrack site loaded at `http://<EC2_PUBLIC_IP>`, with your Full Name and Group Name visible
 
-Add your screenshot here.
+![Task 7 Screenshot](screenshots/assignment-02-task-0703.png)
 
 ---
 
