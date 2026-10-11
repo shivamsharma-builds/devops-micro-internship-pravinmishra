@@ -34,7 +34,7 @@ Confirm your email address if Atlassian requests verification.
 
 #### Screenshot 2 (if applicable) — Confirmation screen after email verification, or the inbox showing the Atlassian verification email subject
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/assignment-01-task-0201.png)
 
 ---
 
@@ -58,7 +58,7 @@ Update your Jira profile with your full name, a job title or role (e.g. "Aspirin
 
 #### Screenshot 3 — Updated profile page showing your full name, role/title, and bio
 
-Add your screenshot here.
+![Task 3 Screenshot](screenshots/assignment-01-task-0301.png)
 
 ---
 
@@ -72,13 +72,13 @@ Locate the project list and open a project's Board or Backlog, and view Project 
 
 #### Screenshot 4 — "View all projects" page showing at least one project
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-01-task-0401.png)
 
 ---
 
 #### Screenshot 5 — Opened project showing either the Board or Backlog screen
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-01-task-0501.png)
 
 ---
 
@@ -94,13 +94,13 @@ Add your screenshot here.
 
 # Completion Checklist
 
-- [ ] Task 1: Jira Software Cloud account created or existing account accessed (Screenshot 1)
-- [ ] Task 2: Email verification completed, or a Google sign-in note included (Screenshot 2 or Notes)
-- [ ] Task 3: Professional profile updated with full name, role/title, and bio (Screenshot 3)
-- [ ] Task 4: Projects page, Board or Backlog, and Project settings explored without making changes (Screenshots 4 & 5)
-- [ ] No Jira issues created
-- [ ] Full Name visible in required screenshots
-- [ ] No sensitive data exposed
+- [✅] Task 1: Jira Software Cloud account created or existing account accessed (Screenshot 1)
+- [✅] Task 2: Email verification completed, or a Google sign-in note included (Screenshot 2 or Notes)
+- [✅] Task 3: Professional profile updated with full name, role/title, and bio (Screenshot 3)
+- [✅] Task 4: Projects page, Board or Backlog, and Project settings explored without making changes (Screenshots 4 & 5)
+- [✅] No Jira issues created
+- [✅] Full Name visible in required screenshots
+- [✅] No sensitive data exposed
 
 ---
 
