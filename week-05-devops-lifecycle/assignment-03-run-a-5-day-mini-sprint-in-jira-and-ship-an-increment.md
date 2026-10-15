@@ -20,13 +20,14 @@ Create the footer Story (`Add footer with version and deploy date`, 1 point, `fr
 
 #### Screenshot 1 — Sprint 1 created with the Story inside it
 
-Add your screenshot here.
+![Task 1 Screenshot](screenshots/assignment-03-task-0101.png)
 
 ---
 
 #### Screenshot 2 — Active Sprint board showing the Sprint Goal
 
-Add your screenshot here.
+![Task 1 Screenshot](screenshots/assignment-03-task-01011.png)
+
 
 ---
 
@@ -40,25 +41,25 @@ Add the required footer text (`Pravin Mishra Portfolio v1.0 — Deployed on <DD 
 
 #### Screenshot 3 — Jira board showing the Day 1 Sub-task in Done
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/assignment-03-task-02011.png)
 
 ---
 
 #### Screenshot 4 — Successful Git commit output
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/assignment-03-task-02012.png)
 
 ---
 
 #### Screenshot 5 — EC2 browser view showing the complete footer text, with the URL visible
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/assignment-03-task-02013.png)
 
 ---
 
 #### Screenshot 6 — Jira Story comment showing the Day 1 Daily Scrum update
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/assignment-03-task-02014.png)
 
 ---
 
