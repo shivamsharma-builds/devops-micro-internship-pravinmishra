@@ -73,25 +73,25 @@ Update the footer so the deployment date is generated automatically (or updated 
 
 #### Screenshot 7 — Code editor showing the footer and date logic or deployment-time template snippet
 
-Add your screenshot here.
+![Task 3 Screenshot](screenshots/assignment-03-task-03011.png)
 
 ---
 
 #### Screenshot 8 — EC2 browser view showing the updated footer with the current date
 
-Add your screenshot here.
+![Task 3 Screenshot](screenshots/assignment-03-task-03012.png)
 
 ---
 
 #### Screenshot 9 — README snippet documenting the footer and date behavior
 
-Add your screenshot here.
+![Task 3 Screenshot](screenshots/assignment-03-task-03013.png)
 
 ---
 
 #### Screenshot 10 — Jira Story comment showing the Day 2 Daily Scrum update
 
-Add your screenshot here.
+![Task 3 Screenshot](screenshots/assignment-03-task-03014.png)
 
 ---
 
@@ -105,19 +105,19 @@ Improve the footer's spacing, contrast, and readability, then validate it at bot
 
 #### Screenshot 11 — Desktop EC2 view showing the polished footer
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-03-task-04011.png)
 
 ---
 
 #### Screenshot 12 — Mobile responsive view showing the footer remains readable
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-03-task-04012.png)
 
 ---
 
 #### Screenshot 13 — Jira Story comment showing the Day 3 Daily Scrum update
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-03-task-04013.png)
 
 ---
 
@@ -131,7 +131,7 @@ Replace the existing homepage tagline with the required DMI Website call-to-acti
 
 #### Screenshot 14 — EC2 browser view showing "Start your DevOps Journey here" and the clickable "Visit the DMI Website" link
 
-Add your screenshot here.
+![Task 5 Screenshot](screenshots/assignment-03-task-05011.png)
 
 ---
 
@@ -145,19 +145,19 @@ Record a two-to-three-minute demo video of the shipped footer, add a retrospecti
 
 #### Screenshot 15 — Burndown Chart for Sprint 1
 
-Add your screenshot here.
+![Task 6 Screenshot](screenshots/assignment-03-task-06011.png)
 
 ---
 
 #### Screenshot 16 — Jira retrospective comment
 
-Add your screenshot here.
+![Task 6 Screenshot](screenshots/assignment-03-task-06012.png)
 
 ---
 
 #### Screenshot 17 — Final EC2 browser view showing the complete footer requirement
 
-Add your screenshot here.
+![Task 6 Screenshot](screenshots/assignment-03-task-06013.png)
 
 ---
 
@@ -165,7 +165,7 @@ Add your screenshot here.
 
 Paste your unlisted YouTube or accessible Google Drive demo-video link here:
 
-`Add your URL here`
+`https://youtu.be/GOohu0CquFo`
 
 ---
 
@@ -181,13 +181,13 @@ Publish a LinkedIn post about your five-day mini-Sprint, including your GitHub r
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/shivamsharma-builds_ai-llms-devops-share-7517093031834144768-1V6I`
 
 ---
 
 #### LinkedIn Screenshot 1 — Published LinkedIn post showing the post content and at least one required link or proof image
 
-Add your screenshot here.
+![Task 7 Screenshot](screenshots/assignment-03-task-linkedin.png)
 
 ---
 

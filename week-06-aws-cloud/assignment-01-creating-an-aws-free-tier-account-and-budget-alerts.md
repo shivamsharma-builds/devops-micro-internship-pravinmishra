@@ -53,13 +53,13 @@ Write your answer here.
 
 # Completion Checklist
 
-- [ ] AWS Free Tier account created and Basic Support Plan (Free) selected
-- [ ] Logged in to the AWS Management Console
-- [ ] Monthly Cost Budget created with name, amount, and start month
-- [ ] Budget alert thresholds and notification email configured
-- [ ] Screenshot captured showing budget name, amount, and thresholds (Screenshot 1)
-- [ ] Notes question answered
-- [ ] No sensitive billing or account information exposed
+- [✅] AWS Free Tier account created and Basic Support Plan (Free) selected
+- [✅] Logged in to the AWS Management Console
+- [✅] Monthly Cost Budget created with name, amount, and start month
+- [✅] Budget alert thresholds and notification email configured
+- [✅] Screenshot captured showing budget name, amount, and thresholds (Screenshot 1)
+- [✅] Notes question answered
+- [✅] No sensitive billing or account information exposed
 
 ---
 

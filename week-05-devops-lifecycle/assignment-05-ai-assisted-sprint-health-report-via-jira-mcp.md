@@ -20,7 +20,7 @@ Generate an API token from your Atlassian account that the MCP server will use t
 
 #### Screenshot 1 — Jira API token creation confirmation page showing the token name, with the token value not visible
 
-Add your screenshot here.
+![Task 1 Screenshot](screenshots/assignment-05-task-01.png)
 
 ### Notes You Must Write (Very Important):
 
@@ -40,7 +40,7 @@ Create or update `.mcp.json` at your project root with a Jira MCP server block, 
 
 #### Screenshot 2 — `.mcp.json` open in VS Code showing the Jira server configuration
 
-Add your screenshot here.
+![Task 2 Screenshot](screenshots/assignment-05-task-02.png)
 
 ### Notes You Must Write (Very Important):
 
@@ -60,7 +60,7 @@ Add your Jira site URL, account email, and API token to `.claude/settings.local.
 
 #### Screenshot 3 — `settings.local.json` open in VS Code showing the `env` section, with the actual token value blurred or covered
 
-Add your screenshot here.
+![Task 3 Screenshot](screenshots/assignment-05-task-03.png)
 
 ### Notes You Must Write (Very Important):
 
@@ -80,7 +80,7 @@ Restart Claude Code and confirm the Jira MCP server shows as connected.
 
 #### Screenshot 4 — `/mcp` output showing `jira: connected`
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-05-task-04.png)
 
 ---
 
@@ -94,7 +94,7 @@ Ask Claude to list the issues in your current active sprint through the Jira MCP
 
 #### Screenshot 5 — Claude's response showing the live sprint issue list retrieved via Jira MCP
 
-Add your screenshot here.
+![Task 5 Screenshot](screenshots/assignment-05-task-05.png)
 
 ### Notes You Must Write (Very Important):
 
@@ -114,11 +114,11 @@ Create a `/sprint-health` skill restricted to read-only Jira tools plus `Read`, 
 
 #### Screenshot 6 — `SKILL.md` frontmatter showing `allowed-tools` limited to read-only Jira tools plus `Read`, with `disable-model-invocation: true`
 
-Add your screenshot here.
+![Task 6 Screenshot](screenshots/assignment-05-task-0601.png)
 
 #### Screenshot 7 — `/sprint-health` output showing the full triage report against your real sprint
 
-Add your screenshot here.
+![Task 6 Screenshot](screenshots/assignment-05-task-0602.png)
 
 ### Notes You Must Write (Very Important):
 
@@ -142,7 +142,7 @@ Manually update one ticket on your board in the browser (for example, move a sto
 
 #### Screenshot 8 — Second `/sprint-health` run showing the report now reflects your manual board change
 
-Add your screenshot here.
+![Task 7 Screenshot](screenshots/assignment-05-task-07.png)
 
 ### Notes You Must Write (Very Important):
 
@@ -164,16 +164,16 @@ Your submission must include:
 
 # Completion Checklist
 
-- [ ] Task 1: Jira API token created, value never screenshotted (Screenshot 1)
-- [ ] Task 2: `.mcp.json` has the Jira server block (Screenshot 2)
-- [ ] Task 3: Credentials stored in `settings.local.json`, token blurred, file gitignored (Screenshot 3)
-- [ ] Task 4: `/mcp` shows the Jira server connected (Screenshot 4)
-- [ ] Task 5: Live query returned real sprint data, verified against the browser (Screenshot 5)
-- [ ] Task 6: `/sprint-health` skill created with correct read-only `allowed-tools`, and produced a full report (Screenshots 6–7)
-- [ ] Task 7: A manual board change was reflected in a second `/sprint-health` run (Screenshot 8)
-- [ ] Skill never created, edited, transitioned, or commented on any issue
-- [ ] Reflection answered (Notes)
-- [ ] No API token value exposed
+- [✅] Task 1: Jira API token created, value never screenshotted (Screenshot 1)
+- [✅] Task 2: `.mcp.json` has the Jira server block (Screenshot 2)
+- [✅] Task 3: Credentials stored in `settings.local.json`, token blurred, file gitignored (Screenshot 3)
+- [✅] Task 4: `/mcp` shows the Jira server connected (Screenshot 4)
+- [✅] Task 5: Live query returned real sprint data, verified against the browser (Screenshot 5)
+- [✅] Task 6: `/sprint-health` skill created with correct read-only `allowed-tools`, and produced a full report (Screenshots 6–7)
+- [✅] Task 7: A manual board change was reflected in a second `/sprint-health` run (Screenshot 8)
+- [✅] Skill never created, edited, transitioned, or commented on any issue
+- [✅] Reflection answered (Notes)
+- [✅] No API token value exposed
 
 ---
 

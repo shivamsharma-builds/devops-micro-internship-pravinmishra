@@ -72,6 +72,7 @@ This is not a course. It is an internship-style program — real deployments, re
 [![Week 02 – Agentic AI](./badges/week-02.svg)](./week-02-agentic-ai/)
 [![Week 03 – Linux & Bash](./badges/week-03.svg)](./week-03-linux-and-bash-for-devops/)
 [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/)
+[![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/)
 
 <!-- Week 00 → Internet & Networking Basics
 [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) 
@@ -141,7 +142,7 @@ Week 01 → Success Mindset
 | 02 | Agentic AI with Claude Code | ✅ Completed | ✅ Solved | [LinkedIn post](https://www.linkedin.com/posts/shivamsharma-builds_week-2-of-the-devops-micro-internship-complete-activity-7506369635848556545-s4sU)| [Blog post](https://medium.com/@shivamsharma123jmt/beyond-chatbots-how-agentic-ai-is-redefining-devops-and-infrastructure-automation-e5bf3e32deae)|
 | 03 | Linux & Bash for DevOps | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_devops-aws-cloudcomputing-share-7509501262288211968-Z3mH) | [Blog post](https://medium.com/@shivamsharma123jmt/step-by-step-guide-deploying-a-personalised-react-application-on-aws-ec2-using-nginx-80357b35ffb7) |
 | 04 | Git & GitHub | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_devops-git-github-ugcPost-7512001690837942272-MzMI) | [Blog post](https://medium.com/@shivamsharma123jmt/week-04-reflection-from-git-basics-to-ai-assisted-devops-workflows-5796761088cf) |
-| 05 | DevOps Lifecycle & Agile | ⬜ Not Started | ⏳ Pending | — | — |
+| 05 | DevOps Lifecycle & Agile | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_ai-llms-devops-share-7517093031834144768-1V6I)| [Blog post](https://medium.com/@shivamsharma123jmt/bridging-the-gap-between-agile-management-and-agentic-ai-a-devops-case-study-9a316e29cae6) |
 | 06 | AWS Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
