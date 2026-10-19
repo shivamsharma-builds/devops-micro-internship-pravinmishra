@@ -28,7 +28,7 @@ Choose Team Mode or Solo Mode, and document how each Scrum role (Product Owner, 
 
 Write one line for each role: PO (what you prioritized), SM (how you ensured process), Dev Lead (what you built), DevOps Lead (how you shipped).
 
-Write your answer here.
+Product Owner (PO): Prioritized user-facing credibility and friction reduction on the job search interface (clear CTA labels, verified badge typography, and transparent salary tag contrast). Scrum Master (SM): Protected the 90-minute time-box, enforced Definition of Ready (DoR) with Gherkin criteria, and ensured every sprint item was broken into testable sub-tasks. Dev Lead: Implemented the semantic HTML and CSS modifications locally, ensuring zero backend dependencies and no DOM layout shift. DevOps Lead: Handled feature branch isolation, git atomic commits, remote SCP synchronization to the AWS EC2 Nginx web root, and service verification.
 
 ---
 
@@ -98,7 +98,7 @@ Confirm the Story Points (1, 2, or 3) for each Story and record brief reasoning 
 
 For each story, explain in one or two lines why it is a 1, 2, or 3 (mention any debate, even in Solo Mode).
 
-Write your answer here.
+GJ-1 (1 pt): Minor string and CSS color replacement on an existing button element. Zero layout risk and low uncertainty. GJ-2 (2 pts): Requires adding an inline SVG/icon asset and adjusting flex alignment with the company title without causing text wrap issues. GJ-3 (1 pt): Pure CSS typography update (font-weight and color contrast adjustment). Negligible complexity. GJ-4 (2 pts): Debate arose on whether touch-target padding (44px min) might overflow mobile card boundaries; estimated at 2 points to account for responsive breakpoint testing. GJ-5 (2 pts): Requires conditionally styling card headers and testing visual balance against the company logo and title elements. GJ-6 (1 pt): Straightforward static text update in the footer component with minimal risk.
 
 ---
 
@@ -158,7 +158,7 @@ Implement one small UI-only Story from Sprint 1, commit it, deploy it live, and 
 
 #### Screenshot 12 — Live URL in the browser showing the UI change, with the URL visible
 
-![Task 8 Screenshot](screenshots/assignment-04-task-0803.png)
+![Task 8 Screenshot](screenshots/assignment-03-task-06013.png)
 
 ---
 
