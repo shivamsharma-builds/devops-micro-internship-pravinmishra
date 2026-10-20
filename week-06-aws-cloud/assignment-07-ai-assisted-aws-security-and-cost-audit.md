@@ -24,7 +24,7 @@ Confirm your AWS CLI is authenticated and can see the S3 bucket, EC2 instance(s)
 
 #### Screenshot 1 — Output of `aws s3 ls`, the EC2 instance table, and the RDS instance table (blur the Account ID if visible)
 
-Add your screenshot here.
+![Task 1 Screenshot](screenshots/assignment-07-task-011.png)
 
 ---
 
@@ -309,21 +309,21 @@ Your submission must include:
 
 # Completion Checklist
 
-- [ ] Task 1: AWS resources confirmed and workspace created (Screenshots 1–2)
-- [ ] Task 2: `CLAUDE.md` created with project context and safety rules (Screenshot 3)
-- [ ] Task 3: Claude produced a read-only five-check audit plan before any script existed (Screenshot 4)
-- [ ] Task 4: `aws-audit.sh` built, executable, and passes `bash -n` (Screenshots 5–7)
-- [ ] Task 5: Baseline audit captured and saved with Full Name visible (Screenshots 8–9)
-- [ ] Task 6: `/aws-audit` skill loads and runs successfully with no Write permission (Screenshots 10–11)
-- [ ] Task 7: A real finding was fixed by you and reverified as PASS (Screenshots 12–13)
-- [ ] Skill never executed a remediation command
-- [ ] New security group rule is scoped to your own IP, not `0.0.0.0/0`
-- [ ] All 13 required task screenshots are included
-- [ ] All "Notes You Must Write" questions are answered in your own words
-- [ ] No AWS credentials or unblurred account IDs exposed
-- [ ] LinkedIn post published and URL submitted
-- [ ] GitHub repository URL included in submission
-- [ ] All assignment files committed and visible in GitHub repository
+- [✅] Task 1: AWS resources confirmed and workspace created (Screenshots 1–2)
+- [✅] Task 2: `CLAUDE.md` created with project context and safety rules (Screenshot 3)
+- [✅] Task 3: Claude produced a read-only five-check audit plan before any script existed (Screenshot 4)
+- [✅] Task 4: `aws-audit.sh` built, executable, and passes `bash -n` (Screenshots 5–7)
+- [✅] Task 5: Baseline audit captured and saved with Full Name visible (Screenshots 8–9)
+- [✅] Task 6: `/aws-audit` skill loads and runs successfully with no Write permission (Screenshots 10–11)
+- [✅] Task 7: A real finding was fixed by you and reverified as PASS (Screenshots 12–13)
+- [✅] Skill never executed a remediation command
+- [✅] New security group rule is scoped to your own IP, not `0.0.0.0/0`
+- [✅] All 13 required task screenshots are included
+- [✅] All "Notes You Must Write" questions are answered in your own words
+- [✅] No AWS credentials or unblurred account IDs exposed
+- [✅] LinkedIn post published and URL submitted
+- [✅] GitHub repository URL included in submission
+- [✅] All assignment files committed and visible in GitHub repository
 
 ---
 
