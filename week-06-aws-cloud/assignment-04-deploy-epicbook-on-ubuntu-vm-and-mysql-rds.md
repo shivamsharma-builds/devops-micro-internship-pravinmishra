@@ -86,19 +86,19 @@ Install Node.js, npm, Nginx, and the MySQL client on the instance, and confirm N
 
 #### Screenshot 8 — Output of `node -v` and `npm -v`
 
-![Task 3 Screenshot](screenshots/assignment-04-task-0401.png)
+![Task 4 Screenshot](screenshots/assignment-04-task-0401.png)
 
 ---
 
 #### Screenshot 9 — Output of `systemctl status nginx`
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-04-task-0402.png)
 
 ---
 
 #### Screenshot 10 — Output of `mysql --version`
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-04-task-0403.png)
 
 ---
 
@@ -112,13 +112,13 @@ Create a private MySQL RDS instance in `epicbook-vpc` using a DB Subnet Group ov
 
 #### Screenshot 11 — RDS instance summary showing Publicly accessible: No
 
-Add your screenshot here.
+![Task 5 Screenshot](screenshots/assignment-04-task-0501.png)
 
 ---
 
 #### Screenshot 12 — Connectivity & security section showing the VPC and attached security group
 
-Add your screenshot here.
+![Task 5 Screenshot](screenshots/assignment-04-task-0501.png)
 
 ---
 
@@ -132,7 +132,7 @@ Connect to RDS from EC2, create the `epicbook` database, and import the provided
 
 #### Screenshot 13 — Terminal showing successful `SHOW TABLES;` output with tables listed
 
-Add your screenshot here.
+![Task 6 Screenshot](screenshots/assignment-04-task-06.png)
 
 ---
 
