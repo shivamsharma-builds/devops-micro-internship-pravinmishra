@@ -20,7 +20,7 @@ Create an architecture diagram showing the custom VPC (10.0.0.0/16), the six sub
 
 #### Diagram image or link
 
-![Task 1 Screenshot](screenshots/assignment-06-task-01.png)
+![Task 1 Screenshot](screenshots/assignment-06-screenshot-01.png)
 
 ---
 
@@ -34,13 +34,13 @@ Record the AWS Region used and list every AWS service used across networking, co
 
 **Region:**
 
-Write your answer here.
+Europe (Stockholm) — eu-north-1
 
 ---
 
 **Services:**
 
-Write your answer here.
+Amazon VPC (custom VPC, 6 subnets across 2 AZs, Internet Gateway, NAT Gateway, route tables) Amazon EC2 (2 instances — Web tier and App tier, Ubuntu 24.04 LTS) Elastic Load Balancing — Application Load Balancer (1 public-facing, 1 internal) Amazon RDS for MySQL (Multi-AZ deployment with standby + 1 read replica) Amazon VPC Security Groups (4 — ALB, Web, App, DB tiers) AWS IAM (account-level access) Nginx (reverse proxy, self-managed on Web tier EC2) PM2 (process manager for Node.js apps, self-managed on both EC2 tiers)
 
 ---
 
@@ -56,7 +56,7 @@ Confirm the Book Review App loads through the public ALB DNS name.
 
 Paste your public ALB DNS name here:
 
-`Add your URL here`
+`http://capstone-public-alb-1315087209.eu-north-1.elb.amazonaws.com`
 
 ---
 
@@ -70,37 +70,37 @@ Capture visual proof of every tier and load balancer.
 
 #### Web EC2
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-06-screenshot-02.png)
 
 ---
 
 #### App EC2
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-06-screenshot-03.png)
 
 ---
 
 #### Public ALB
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-06-screenshot-04.png)
 
 ---
 
 #### Internal ALB
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-06-screenshot-05.png)
 
 ---
 
 #### RDS + Replica
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-06-screenshot-06.png)
 
 ---
 
 #### App UI proof
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-06-screenshot-07.png)
 
 ---
 
@@ -114,19 +114,19 @@ Summarize what worked in the final deployment, the issues encountered and how ea
 
 **What worked:**
 
-Write your answer here.
+The full three-tier architecture deployed successfully: a public-facing ALB routing to an Nginx-fronted Next.js web tier, an internal ALB routing to a private Node.js/Express app tier, and a Multi-AZ RDS MySQL database with a read replica. End-to-end connectivity was verified in the browser — the app correctly serves seeded book data through the entire chain (public ALB → web tier → internal ALB → app tier → RDS). Both compute tiers run under PM2 for process persistence.
 
 ---
 
 **Issues + fixes:**
 
-Write your answer here.
+EC2 launches initially failed on t3.micro capacity in both AZs — resolved by switching to t3.small. Internal ALB's first creation attempt used the wrong scheme (Internet-facing instead of Internal) after a session interruption — caught via the "Reachability may be impacted" warning, deleted and recreated correctly. App tier target group health checks failed with "Request timed out" even though the backend was confirmed running locally — root cause was the app security group missing a self-referencing rule on port 3001, needed because the internal ALB's own network interfaces sit inside that same security group. Adding an inbound rule allowing port 3001 from the security group itself resolved it. SSH access was briefly blocked after a home router restart changed the admin IP — updated both web and app security groups' SSH source to the new IP. Bastion-hop SSH from the web tier to the app tier initially hung with no error — cause was the app security group only allowing SSH from the admin IP, not from the web tier's security group; added a second SSH rule sourced from the web security group.
 
 ---
 
 **Tools/sources used:**
 
-Write your answer here.
+AWS Management Console (EC2, VPC, RDS, ELB), AWS documentation for target group health checks and Multi-AZ RDS deployment options, and Claude for real-time troubleshooting and configuration guidance throughout the build.
 
 ---
 
@@ -142,13 +142,13 @@ Publish a LinkedIn post sharing the capstone deployment, including the public AL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/shivamsharma-builds_aws-devops-cloudcomputing-share-7520727351735775232-vjfa/`
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![Task 6 Screenshot](screenshots/week-06-linkedin.png)
 
 ---
 

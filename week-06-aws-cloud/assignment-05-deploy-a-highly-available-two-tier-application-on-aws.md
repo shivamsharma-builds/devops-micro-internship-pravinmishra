@@ -164,13 +164,13 @@ Confirm the application communicates with the RDS database through the ALB DNS n
 
 #### Screenshot 17 — Browser showing the application loaded through the ALB DNS name with the URL visible
 
-Add your screenshot here.
+![Task 7 Screenshot](screenshots/assignment-05-task-071.jpg)
 
 ---
 
 #### Screenshot 18 — Proof of a database write through a UI message or database query output
 
-Add your screenshot here.
+![Task 7 Screenshot](screenshots/assignment-05-task-072.jpg)
 
 ---
 
@@ -186,25 +186,25 @@ Test B: simulate an Availability Zone impact (stop, detach, or reduce desired ca
 
 #### Screenshot 19 — EC2 showing the terminated instance and the newly launched instance; timestamps are helpful
 
-Add your screenshot here.
+![Task 8 Screenshot](screenshots/assignment-05-task-081.png)
 
 ---
 
 #### Screenshot 20 — Target group showing healthy targets after replacement
 
-Add your screenshot here.
+![Task 8 Screenshot](screenshots/assignment-05-task-082.png)
 
 ---
 
 #### Screenshot 21 — Evidence that an instance was removed, detached, placed in Standby, or stopped in one Availability Zone
 
-Add your screenshot here.
+![Task 8 Screenshot](screenshots/assignment-05-task-083.png)
 
 ---
 
 #### Screenshot 22 — Browser showing that the ALB DNS endpoint still works during the change
 
-Add your screenshot here.
+![Task 8 Screenshot](screenshots/assignment-05-task-084.png)
 
 ---
 
@@ -218,7 +218,7 @@ Summarize the VPC/subnet layout, the ALB and Auto Scaling Group setup, the priva
 
 #### Screenshot 23 — A simple architecture diagram, which may be hand-drawn, or an AWS console overview showing the components
 
-Add your screenshot here.
+![Task 9 Screenshot](screenshots/assignment-05-task-09.png)
 
 ---
 
@@ -226,19 +226,21 @@ Add your screenshot here.
 
 Summarize the VPC and subnets across the two Availability Zones.
 
-Write your answer here.
+ha-vpc (10.0.0.0/16) spans two AZs in eu-north-1 (Stockholm). Each AZ has a public subnet (for the ALB and NAT Gateway) and a private subnet (for web and DB tiers): ha-public-subnet-a (10.0.1.0/24) and ha-public-subnet-b (10.0.2.0/24) in the public tier, ha-private-subnet-a (10.0.11.0/24) and ha-private-subnet-b (10.0.12.0/24) in the private tier. An Internet Gateway gives the public subnets internet access; a NAT Gateway in the public subnet lets private-subnet resources reach the internet outbound without being publicly reachable. Separate route tables route public subnet traffic through the IGW and private subnet traffic through the NAT Gateway.
 
 Summarize the ALB and Auto Scaling Group setup.
 
-Write your answer here.
+The Application Load Balancer sits in both public subnets, distributing HTTP traffic across two AZs. Behind it, ha-asg runs a Launch Template (HA-WEB-Launch-Template, using a pre-baked AMI) with desired/min capacity of 2 and max of 4, keeping exactly one instance running per AZ under normal conditions. The ASG registers instances directly into the ALB's target group (ha-web-tg) and automatically replaces any instance that fails health checks.
 
 Summarize the private Multi-AZ RDS setup.
 
-Write your answer here.
+The database tier is a Multi-AZ RDS instance (ha-db) deployed across a DB subnet group spanning both private subnets, with a synchronous standby in the second AZ. It's reachable only from the web tier's security group on port 3306, with no public access. Multi-AZ gives automatic failover to the standby if the primary AZ or instance becomes unavailable.
 
 Summarize the results of both high-availability tests.
 
-Write your answer here.
+Test A (instance failure): manually terminating one ASG-managed web instance triggered automatic replacement — the ASG detected the unhealthy/terminated instance and launched a new one to restore desired capacity, which then registered as Healthy in the target group. The ALB continued serving traffic throughout via the remaining healthy instance, with no observed downtime.
+
+Test B (AZ impact): putting one instance into Standby removed it from active service and the target group, simulating one AZ losing capacity while desired capacity stayed at 2. The application remained fully reachable through the ALB DNS name the entire time, served by the single remaining healthy instance in the other AZ.
 
 ---
 
@@ -254,13 +256,13 @@ Publish a LinkedIn post about the high-availability build, including the ALB URL
 
 Paste your LinkedIn post URL here:
 
-`Add your URL here`
+`https://www.linkedin.com/posts/shivamsharma-builds_aws-devops-cloudcomputing-share-7520727351735775232-vjfa/`
 
 ---
 
 #### Screenshot of LinkedIn post
 
-Add your screenshot here.
+![Task 10 Screenshot](screenshots/week-06-linkedin.png)
 
 ---
 
