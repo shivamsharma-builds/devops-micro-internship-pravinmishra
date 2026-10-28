@@ -20,7 +20,7 @@ Create `eb-demo-vnet` (10.0.0.0/16) with `web-subnet` (10.0.1.0/24), `app-subnet
 
 #### Screenshot 1 — Subnet configuration screen showing the three subnets and Bastion subnet (if enabled)
 
-Add your screenshot here.
+![Task 1 Screenshot](screenshots/assignment-03-screenshot-01.png)
 
 ---
 
@@ -44,7 +44,7 @@ Create Standard Public Load Balancer `web-public-elb` with frontend IP `web-elb-
 
 #### Screenshot 2 — Load Balancer frontend IP configuration
 
-Add your screenshot here.
+![Task 3 Screenshot](screenshots/assignment-03-screenshot-02.png)
 
 ---
 
@@ -58,7 +58,7 @@ Confirm the NGINX default page is reachable through the Load Balancer's public I
 
 #### Screenshot 3 — Browser showing the NGINX welcome page through the Load Balancer Public IP
 
-Add your screenshot here.
+![Task 4 Screenshot](screenshots/assignment-03-screenshot-03.png)
 
 ---
 
@@ -82,12 +82,12 @@ After capturing all required evidence, delete the `vnet-demo-rg` Resource Group 
 
 # Completion Checklist
 
-- [ ] Task 1: VNet and three subnets created (Screenshot 1)
-- [ ] Task 2: Web VM created and NGINX installed and verified
-- [ ] Task 3: Public Load Balancer configured (Screenshot 2)
-- [ ] Task 4: NGINX reachable through the Load Balancer public IP (Screenshot 3)
-- [ ] Task 5: Resource Group deleted after evidence was captured
-- [ ] No sensitive data exposed
+- [✅] Task 1: VNet and three subnets created (Screenshot 1)
+- [✅] Task 2: Web VM created and NGINX installed and verified
+- [✅] Task 3: Public Load Balancer configured (Screenshot 2)
+- [✅] Task 4: NGINX reachable through the Load Balancer public IP (Screenshot 3)
+- [✅] Task 5: Resource Group deleted after evidence was captured
+- [✅] No sensitive data exposed
 
 ---
 
