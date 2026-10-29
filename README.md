@@ -74,6 +74,7 @@ This is not a course. It is an internship-style program — real deployments, re
 [![Week 04 – Git](./badges/week-04.svg)](./week-04-git-and-github/)
 [![Week 05 – Agile](./badges/week-05.svg)](./week-05-devops-lifecycle/)
 [![Week 06 – AWS](./badges/week-06.svg)](./week-06-aws-cloud/)
+[![Week 07 – Azure](./badges/week-07.svg)](./week-07-azure-cloud/)
 
 <!-- Week 00 → Internet & Networking Basics
 [![Week 00 – Networking](./badges/week-00.svg)](./week-00-internet-and-networking/) 
@@ -145,7 +146,7 @@ Week 01 → Success Mindset
 | 04 | Git & GitHub | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_devops-git-github-ugcPost-7512001690837942272-MzMI) | [Blog post](https://medium.com/@shivamsharma123jmt/week-04-reflection-from-git-basics-to-ai-assisted-devops-workflows-5796761088cf) |
 | 05 | DevOps Lifecycle & Agile | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_ai-llms-devops-share-7517093031834144768-1V6I)| [Blog post](https://medium.com/@shivamsharma123jmt/bridging-the-gap-between-agile-management-and-agentic-ai-a-devops-case-study-9a316e29cae6) |
 | 06 | AWS Cloud | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_aws-devops-cloudcomputing-share-7520727351735775232-vjfa) | [Blog post](https://medium.com/@shivamsharma123jmt/from-my-first-aws-website-to-ai-assisted-cloud-security-7-hands-on-devops-projects-acb823f967b6) |
-| 07 | Azure Cloud | ⬜ Not Started | ⏳ Pending | — | — |
+| 07 | Azure Cloud | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_aws-devops-cloudcomputing-share-7520727351735775232-vjfa) | [Blog post](https://medium.com/@shivamsharma123jmt/from-my-first-aws-website-to-ai-assisted-cloud-security-7-hands-on-devops-projects-acb823f967b6) |
 | 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
 | 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
 | 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
