@@ -1,0 +1,22 @@
+========================================
+Azure Security Posture Audit Report
+========================================
+Full Name: Christian Aryee
+Timestamp: 2026-08-31T15:09:21Z
+Resource Group: Book-Review-RG
+VM: Book-Review-Web-VM
+Storage Account: bookreviewaudit18
+MySQL Server: book-review-mysql
+
+[FAIL] NSG rule(s) allow unrestricted inbound SSH/RDP access: Allow-SSH-MyIP
+[PASS] Storage Account blob public access is disabled
+[PASS] VM OS managed disk is encrypted at rest (EncryptionAtRestWithPlatformKey)
+[PASS] Azure Database for MySQL public network access is disabled
+
+Summary:
+PASS: 3
+WARN: 0
+FAIL: 1
+Overall Status: FAIL
+Script Exit Code: 2
+Report File: /c/Users/Waddl/week-07-azure-audit/reports/azure-security-report.txt
