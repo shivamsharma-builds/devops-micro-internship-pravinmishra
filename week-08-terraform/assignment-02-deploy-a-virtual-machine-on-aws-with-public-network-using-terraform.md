@@ -110,7 +110,7 @@ Review the Terraform execution plan, provision the AWS resources, and record the
 
 Record the public IP address displayed by `terraform output`.
 
-**EC2 Public IP Address:** `Add the public IP address here`
+**EC2 Public IP Address:** `http://51.21.249.87`
 
 ---
 
