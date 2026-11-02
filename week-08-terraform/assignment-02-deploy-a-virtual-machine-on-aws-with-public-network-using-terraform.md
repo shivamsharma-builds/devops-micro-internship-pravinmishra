@@ -24,7 +24,7 @@ Prepare your local environment for Terraform deployment by installing Terraform,
 
 Ensure that your full name is visible and that no AWS credentials, account IDs, or other sensitive information are exposed.
 
-Add your screenshot here.
+[Task 0 Screenshot 1](screenshots/assignment-02-screenshot-01.png)
 
 ---
 
@@ -54,7 +54,7 @@ The configuration must include:
 
 #### Screenshot 2 — VS Code showing the AWS provider configuration and VPC configuration in `main.tf`
 
-Add your screenshot here.
+[Task 1 Screenshot 2](screenshots/assignment-02-screenshot-02.png)
 
 ---
 
@@ -62,7 +62,7 @@ Add your screenshot here.
 
 Ensure that no AWS credentials, private keys, account IDs, or other sensitive information are visible.
 
-Add your screenshot here.
+[Task 1 Screenshot 3](screenshots/assignment-02-screenshot-03.png)
 
 ---
 
@@ -76,7 +76,7 @@ Initialize the Terraform working directory and download the required provider co
 
 #### Screenshot 4 — Terminal showing the successful `terraform init` output
 
-Add your screenshot here.
+[Task 2 Screenshot 4](screenshots/assignment-02-screenshot-04.png)
 
 ---
 
@@ -90,19 +90,19 @@ Review the Terraform execution plan, provision the AWS resources, and record the
 
 #### Screenshot 5 — Terraform plan summary showing the proposed resources
 
-Add your screenshot here.
+[Task 3 Screenshot 5](screenshots/assignment-02-screenshot-05.png)
 
 ---
 
 #### Screenshot 6 — Terraform apply output showing successful completion
 
-Add your screenshot here.
+[Task 3 Screenshot 6](screenshots/assignment-02-screenshot-06.png)
 
 ---
 
 #### Screenshot 7 — Terraform output showing the public IP address of the EC2 instance
 
-Add your screenshot here.
+[Task 3 Screenshot 7](screenshots/assignment-02-screenshot-07.png)
 
 ---
 
@@ -132,13 +132,14 @@ Confirm that:
 
 #### Screenshot 8 — AWS CLI output showing the EC2 instance ID, `running` state, and public IP address
 
-Add your screenshot here.
+[Task 4 Screenshot 8](screenshots/assignment-02-screenshot-08.png)
+[Task 4 Screenshot 8](screenshots/assignment-02-screenshot-0801.png)
 
 ---
 
 #### Screenshot 9 — Browser showing the Nginx page successfully loaded using the EC2 instance public IP
 
-Add your screenshot here.
+[Task 4 Screenshot 9](screenshots/assignment-02-screenshot-09.png)
 
 ---
 
@@ -152,7 +153,7 @@ Remove all AWS resources created by Terraform after completing the deployment an
 
 #### Screenshot 10 — Terminal showing successful `terraform destroy` completion
 
-Add your screenshot here.
+[Task 5 Screenshot 10](screenshots/assignment-02-screenshot-10.png)
 
 ---
 
@@ -172,33 +173,33 @@ Add your screenshot here.
 
 # Completion Checklist
 
-* [ ] Installed Terraform and verified it using `terraform version`
-* [ ] Installed AWS CLI and verified it using `aws --version`
-* [ ] Configured AWS CLI and verified account access
-* [ ] Confirmed the correct AWS Region
-* [ ] Installed and enabled the HashiCorp Terraform extension in VS Code
-* [ ] Created the `terraform-aws-vm` project directory and `main.tf`
-* [ ] Added the Terraform and AWS provider configuration
-* [ ] Defined the custom VPC, public subnet, and private subnet
-* [ ] Configured the Internet Gateway and public route table
-* [ ] Associated the public route table with the public subnet
-* [ ] Defined the security group for SSH and HTTP access
-* [ ] Restricted SSH access to my public IP whenever possible
-* [ ] Defined the EC2 instance inside the public subnet
-* [ ] Configured SSH authentication without exposing the private key
-* [ ] Added the Terraform output for the EC2 public IP address
-* [ ] Completed `terraform init` successfully
-* [ ] Reviewed the Terraform execution plan using `terraform plan`
-* [ ] Completed `terraform apply` successfully
-* [ ] Captured and recorded the EC2 public IP using `terraform output`
-* [ ] Verified that the EC2 instance is running using AWS CLI
-* [ ] Verified that the AWS public IP matches the Terraform output
-* [ ] Verified Nginx access through the EC2 public IP
-* [ ] Completed `terraform destroy` successfully
-* [ ] Captured all 10 required screenshots
-* [ ] Confirmed that my full name is visible in the required screenshots
-* [ ] Checked that no AWS credentials, private keys, passwords, account IDs, or other sensitive information are visible
-* [ ] Confirmed that no `.pem` private key file has been uploaded to the GitHub repository
+* [✅] Installed Terraform and verified it using `terraform version`
+* [✅] Installed AWS CLI and verified it using `aws --version`
+* [✅] Configured AWS CLI and verified account access
+* [✅] Confirmed the correct AWS Region
+* [✅] Installed and enabled the HashiCorp Terraform extension in VS Code
+* [✅] Created the `terraform-aws-vm` project directory and `main.tf`
+* [✅] Added the Terraform and AWS provider configuration
+* [✅] Defined the custom VPC, public subnet, and private subnet
+* [✅] Configured the Internet Gateway and public route table
+* [✅] Associated the public route table with the public subnet
+* [✅] Defined the security group for SSH and HTTP access
+* [✅] Restricted SSH access to my public IP whenever possible
+* [✅] Defined the EC2 instance inside the public subnet
+* [✅] Configured SSH authentication without exposing the private key
+* [✅] Added the Terraform output for the EC2 public IP address
+* [✅] Completed `terraform init` successfully
+* [✅] Reviewed the Terraform execution plan using `terraform plan`
+* [✅] Completed `terraform apply` successfully
+* [✅] Captured and recorded the EC2 public IP using `terraform output`
+* [✅] Verified that the EC2 instance is running using AWS CLI
+* [✅] Verified that the AWS public IP matches the Terraform output
+* [✅] Verified Nginx access through the EC2 public IP
+* [✅] Completed `terraform destroy` successfully
+* [✅] Captured all 10 required screenshots
+* [✅] Confirmed that my full name is visible in the required screenshots
+* [✅] Checked that no AWS credentials, private keys, passwords, account IDs, or other sensitive information are visible
+* [✅] Confirmed that no `.pem` private key file has been uploaded to the GitHub repository
 
 ---
 
