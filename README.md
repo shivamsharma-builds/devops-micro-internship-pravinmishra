@@ -146,13 +146,13 @@ Week 01 → Success Mindset
 | 04 | Git & GitHub | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_devops-git-github-ugcPost-7512001690837942272-MzMI) | [Blog post](https://medium.com/@shivamsharma123jmt/week-04-reflection-from-git-basics-to-ai-assisted-devops-workflows-5796761088cf) |
 | 05 | DevOps Lifecycle & Agile | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_ai-llms-devops-share-7517093031834144768-1V6I)| [Blog post](https://medium.com/@shivamsharma123jmt/bridging-the-gap-between-agile-management-and-agentic-ai-a-devops-case-study-9a316e29cae6) |
 | 06 | AWS Cloud | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_aws-devops-cloudcomputing-share-7520727351735775232-vjfa) | [Blog post](https://medium.com/@shivamsharma123jmt/from-my-first-aws-website-to-ai-assisted-cloud-security-7-hands-on-devops-projects-acb823f967b6) |
-| 07 | Azure Cloud | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_aws-devops-cloudcomputing-share-7520727351735775232-vjfa) | [Blog post](https://medium.com/@shivamsharma123jmt/from-my-first-aws-website-to-ai-assisted-cloud-security-7-hands-on-devops-projects-acb823f967b6) |
-| 08 | Terraform | ⬜ Not Started | ⏳ Pending | — | — |
-| 09 | Ansible | ⬜ Not Started | ⏳ Pending | — | — |
-| 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | — | — |
-| 11 | Docker | ⬜ Not Started | ⏳ Pending | — | — |
-| 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | — | — |
-| 13 | Final Project | ⬜ Not Started | ⏳ Pending | — | — |
+| 07 | Azure Cloud | ✅ completed | ✅ Solved | [Linkedin post](https://www.linkedin.com/posts/shivamsharma-builds_microsoftazure-azurecloud-devops-share-7523008088753336320-QWCm) | [Blog post](https://medium.com/@shivamsharma123jmt/my-azure-devops-journey-7-hands-on-projects-completed-from-cloud-fundamentals-to-ai-powered-55b9ab966ee6) |
+| 08 | Terraform | ⬜ Not Started | ⏳ Pending | [Linkedin post]() | [Blog post]() |
+| 09 | Ansible | ⬜ Not Started | ⏳ Pending | [Linkedin post]() | [Blog post]() |
+| 10 | Azure DevOps (CI/CD) | ⬜ Not Started | ⏳ Pending | [Linkedin post]() | [Blog post]() |
+| 11 | Docker | ⬜ Not Started | ⏳ Pending | [Linkedin post]() | [Blog post]() |
+| 12 | Kubernetes | ⬜ Not Started | ⏳ Pending | [Linkedin post]() | [Blog post]() |
+| 13 | Final Project | ⬜ Not Started | ⏳ Pending | [Linkedin post]() | [Blog post]() |
 
 **Status:** ⬜ Not Started &nbsp;|&nbsp; 🔄 In Progress &nbsp;|&nbsp; ✅ Completed<br>
 **Assignment:** ⏳ Pending &nbsp;|&nbsp; ✅ Solved
