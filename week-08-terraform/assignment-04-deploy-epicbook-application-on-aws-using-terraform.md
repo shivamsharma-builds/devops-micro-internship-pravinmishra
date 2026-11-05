@@ -24,7 +24,7 @@ Prepare your local environment by installing Terraform, AWS CLI, and the HashiCo
 
 Add a screenshot of the terminal showing successful `terraform version` output.
 
-Add your screenshot here.
+[Terraform Version](<screenshots/week-08 Assignment-04-screenshot1.png>)
 
 ---
 
@@ -32,7 +32,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful `aws --version` output.
 
-Add your screenshot here.
+[AWS CLI Version](<screenshots/week-08 Assignment-04-screenshot2.png>)
 
 ---
 
@@ -40,7 +40,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the HashiCorp Terraform extension installed and enabled.
 
-Add your screenshot here.
+[HashiCorp Terraform Extension](<screenshots/week-08 Assignment-04-screenshot3.png>)
 
 ---
 
@@ -80,7 +80,7 @@ terraform-aws-epicbook/
 
 Add a screenshot of the VS Code Explorer showing the complete root project and the `network`, `ec2`, and `rds` module directory structure.
 
-Add your screenshot here.
+[Modular Project Structure](<screenshots/week-08 Assignment-04-screenshot4.png>)
 
 ---
 
@@ -109,7 +109,7 @@ The network module must include:
 
 Add a screenshot of VS Code showing the VPC, public subnet, and two private database subnet configurations.
 
-Add your screenshot here.
+[VPC and Subnets](<screenshots/week-08 Assignment-04-screenshot5.png>)
 
 ---
 
@@ -117,7 +117,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the Internet Gateway, public route table, and route table association.
 
-Add your screenshot here.
+[Internet Gateway and Public Routing](<screenshots/week-08 Assignment-04-screenshot6.png>)
 
 ---
 
@@ -125,7 +125,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the EC2 and RDS Security Groups, including MySQL access from the EC2 Security Group only.
 
-Add your screenshot here.
+[EC2 and RDS Security Groups](<screenshots/week-08 Assignment-04-screenshot7.png>)
 
 ---
 
@@ -133,7 +133,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the network module outputs.
 
-Add your screenshot here.
+[Network Module Outputs](<screenshots/week-08 Assignment-04-screenshot8.png>)
 
 ---
 
@@ -161,7 +161,7 @@ The `user_data.sh` script must install the required software without storing dat
 
 Add a screenshot of VS Code showing the EC2 resource and `user_data` configuration.
 
-Add your screenshot here.
+[EC2 Resource and user_data](<screenshots/week-08 Assignment-04-screenshot9.png>)
 
 ---
 
@@ -171,7 +171,8 @@ Add a screenshot of VS Code showing `user_data.sh`.
 
 Ensure that no credentials, passwords, private keys, access tokens, or application secrets are visible.
 
-Add your screenshot here.
+
+[VS Code showing user_data.sh](<screenshots/week-08 Assignment-04-screenshot10.png>)
 
 ---
 
@@ -179,7 +180,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the EC2 module variables and outputs.
 
-Add your screenshot here.
+[EC2 Module Variables and Outputs](<screenshots/week-08 Assignment-04-screenshot11.png>)
 
 ---
 
@@ -205,7 +206,7 @@ The RDS module must include:
 
 Add a screenshot of VS Code showing the DB subnet group and RDS MySQL configuration.
 
-Add your screenshot here.
+[DB Subnet Group and RDS MySQL](<screenshots/week-08 Assignment-04-screenshot12.png>)
 
 ---
 
