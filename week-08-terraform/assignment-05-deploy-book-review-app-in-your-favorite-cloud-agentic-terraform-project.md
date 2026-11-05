@@ -464,61 +464,61 @@ Write the post in your own words, include at least one project image or other pr
 
 # Completion Checklist
 
-- [ ] Selected AWS or Azure
-- [ ] Added and reviewed the Agentic AI starter files
-- [ ] Configured `CLAUDE.md`
-- [ ] Configured the Terraform Engineer subagent
-- [ ] Configured the Architecture and Security Reviewer subagent
-- [ ] Connected Terraform MCP
-- [ ] Configured validation hooks and safety guardrails
-- [ ] Created the architecture diagram
-- [ ] Created the six-subnet design
-- [ ] Configured public Web Tier routing
-- [ ] Kept the Application Tier private
-- [ ] Kept the Database Tier private
-- [ ] Configured tier-specific Security Groups or NSGs
-- [ ] Restricted backend port `3001`
-- [ ] Restricted MySQL port `3306` to the Application Tier
-- [ ] Created the public load balancer
-- [ ] Created the internal load balancer
-- [ ] Configured listeners and health checks
-- [ ] Deployed the Web Tier compute resources
-- [ ] Deployed the private Application Tier compute resources
-- [ ] Provisioned private managed MySQL
-- [ ] Configured Multi-AZ or high availability
-- [ ] Configured a read replica
-- [ ] Created the modular Terraform project
-- [ ] Used variables, outputs, and module dependencies
-- [ ] Used current Terraform documentation through MCP
-- [ ] Used hooks for deterministic validation
-- [ ] Completed `terraform fmt`
-- [ ] Completed `terraform validate`
-- [ ] Reviewed `terraform plan`
-- [ ] Completed the Terraform Engineer review
-- [ ] Completed the Architecture and Security review
-- [ ] Applied the infrastructure only after human approval
-- [ ] Deployed and configured the backend
-- [ ] Deployed and configured the frontend
-- [ ] Configured Nginx where required
-- [ ] Configured the internal backend endpoint
-- [ ] Configured the public frontend endpoint
-- [ ] Verified the homepage
-- [ ] Verified login or authentication
-- [ ] Verified book data
-- [ ] Verified review functionality
-- [ ] Verified the backend API
-- [ ] Verified database reads and writes
-- [ ] Verified healthy load-balancer targets
-- [ ] Included AI-assisted Terraform generation evidence
-- [ ] Included one architecture or security review
-- [ ] Included one AI-assisted troubleshooting example
-- [ ] Completed the final architecture review
-- [ ] Answered all 15 reflection questions
-- [ ] Published the mandatory LinkedIn post
-- [ ] Added the LinkedIn post URL
-- [ ] Captured all 28 required screenshots
-- [ ] Confirmed that my full name is visible in the required screenshots
-- [ ] Checked that no secrets or sensitive information are exposed
+- [✅] Selected AWS or Azure
+- [✅] Added and reviewed the Agentic AI starter files
+- [✅] Configured `CLAUDE.md`
+- [✅] Configured the Terraform Engineer subagent
+- [✅] Configured the Architecture and Security Reviewer subagent
+- [✅] Connected Terraform MCP
+- [✅] Configured validation hooks and safety guardrails
+- [✅] Created the architecture diagram
+- [✅] Created the six-subnet design
+- [✅] Configured public Web Tier routing
+- [✅] Kept the Application Tier private
+- [✅] Kept the Database Tier private
+- [✅] Configured tier-specific Security Groups or NSGs
+- [✅] Restricted backend port `3001`
+- [✅] Restricted MySQL port `3306` to the Application Tier
+- [✅] Created the public load balancer
+- [✅] Created the internal load balancer
+- [✅] Configured listeners and health checks
+- [✅] Deployed the Web Tier compute resources
+- [✅] Deployed the private Application Tier compute resources
+- [✅] Provisioned private managed MySQL
+- [✅] Configured Multi-AZ or high availability
+- [✅] Configured a read replica
+- [✅] Created the modular Terraform project
+- [✅] Used variables, outputs, and module dependencies
+- [✅] Used current Terraform documentation through MCP
+- [✅] Used hooks for deterministic validation
+- [✅] Completed `terraform fmt`
+- [✅] Completed `terraform validate`
+- [✅] Reviewed `terraform plan`
+- [✅] Completed the Terraform Engineer review
+- [✅] Completed the Architecture and Security review
+- [✅] Applied the infrastructure only after human approval
+- [✅] Deployed and configured the backend
+- [✅] Deployed and configured the frontend
+- [✅] Configured Nginx where required
+- [✅] Configured the internal backend endpoint
+- [✅] Configured the public frontend endpoint
+- [✅] Verified the homepage
+- [✅] Verified login or authentication
+- [✅] Verified book data
+- [✅] Verified review functionality
+- [✅] Verified the backend API
+- [✅] Verified database reads and writes
+- [✅] Verified healthy load-balancer targets
+- [✅] Included AI-assisted Terraform generation evidence
+- [✅] Included one architecture or security review
+- [✅] Included one AI-assisted troubleshooting example
+- [✅] Completed the final architecture review
+- [✅] Answered all 15 reflection questions
+- [✅] Published the mandatory LinkedIn post
+- [✅] Added the LinkedIn post URL
+- [✅] Captured all 28 required screenshots
+- [✅] Confirmed that my full name is visible in the required screenshots
+- [✅] Checked that no secrets or sensitive information are exposed
 
 ---
 
