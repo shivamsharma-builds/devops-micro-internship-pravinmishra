@@ -354,7 +354,7 @@ Add a screenshot of the terminal showing a successful connection from EC2 to Ama
 
 Ensure that the database password is not visible.
 
-Add your screenshot here.
+[EC2-to-RDS Connection](<screenshots/week-08 Assignment-04-screenshot26.png>)
 
 ---
 
@@ -362,7 +362,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing the EpicBook tables and imported data.
 
-Add your screenshot here.
+[EpicBook Tables and Imported Data](<screenshots/week-08 Assignment-04-screenshot27.png>)
 
 ---
 
@@ -378,7 +378,7 @@ Install EpicBook dependencies, configure the application to use Amazon RDS, conf
 
 Add a screenshot of the terminal showing successful dependency installation and the `node_modules` directory.
 
-Add your screenshot here.
+[Dependencies and node_modules](<screenshots/week-08 Assignment-04-screenshot28.png>)
 
 ---
 
@@ -386,7 +386,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing a successful Nginx configuration test and active service status.
 
-Add your screenshot here.
+[Nginx Configuration and Service](<screenshots/week-08 Assignment-04-screenshot29.png>)
 
 ---
 
@@ -394,7 +394,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing EpicBook running or listening on port `8080`.
 
-Add your screenshot here.
+[EpicBook on Port 8080](<screenshots/week-08 Assignment-04-screenshot30.png>)
 
 ---
 
@@ -406,7 +406,7 @@ Verify that EpicBook, EC2, Nginx, and Amazon RDS work together successfully.
 
 ## EC2 Public IP URL
 
-**EC2 Public IP URL:** Add the working EpicBook EC2 public IP URL here
+**EC2 Public IP URL:** `http://32.196.116.123`
 
 ## Evidence
 
@@ -414,7 +414,8 @@ Verify that EpicBook, EC2, Nginx, and Amazon RDS work together successfully.
 
 Add a screenshot of the browser showing EpicBook using the EC2 public IP.
 
-Add your screenshot here.
+[EpicBook Through the EC2 Public IP 1](<screenshots/week-08 Assignment-04-screenshot31.png>)
+[EpicBook Through the EC2 Public IP 2](<screenshots/week-08 Assignment-04-screenshot31-1.png>)
 
 ---
 
@@ -422,7 +423,7 @@ Add your screenshot here.
 
 Add a screenshot of the browser showing a successful cart or checkout action.
 
-Add your screenshot here.
+[Cart or Checkout Action](<screenshots/week-08 Assignment-04-screenshot32.png>)
 
 ---
 
@@ -432,8 +433,7 @@ Add a screenshot of the terminal showing the corresponding RDS database record c
 
 Ensure that database credentials and other sensitive values are not visible.
 
-Add your screenshot here.
-
+[Corresponding RDS Record](<screenshots/week-08 Assignment-04-screenshot33.png>)
 ---
 
 # Task 11 — Destroy the Terraform Infrastructure
@@ -448,7 +448,7 @@ Remove all AWS resources created by the modular Terraform configuration.
 
 Add a screenshot of the terminal showing successful `terraform destroy` completion.
 
-Add your screenshot here.
+[Destroy the Terraform Infrastructure](<screenshots/week-08 Assignment-04-screenshot34.png>)
 
 ---
 
@@ -466,11 +466,11 @@ Write the post in your own words and include at least one deployment screenshot 
 
 Add a screenshot of the published LinkedIn post showing the post and at least one deployment image or other proof.
 
-Add your screenshot here.
+[Published LinkedIn Post](<screenshots/week-08 Assignment-04-linkedinpostscreenshot.png>)
 
 ## LinkedIn Post URL
 
-**LinkedIn Post URL:** Add your LinkedIn post URL here
+**LinkedIn Post URL:** `https://www.linkedin.com/posts/shivamsharma-builds_dmibypravinmishra-devops-terraform-share-7523994023133388800-L4QO`
 
 ---
 
