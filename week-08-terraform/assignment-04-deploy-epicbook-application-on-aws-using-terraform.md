@@ -216,7 +216,7 @@ Add a screenshot of VS Code showing `publicly_accessible = false`, the RDS Secur
 
 Ensure that the database password and other sensitive values are hidden.
 
-Add your screenshot here.
+[Private RDS and Sensitive Variables](<screenshots/week-08 Assignment-04-screenshot13.png>)
 
 ---
 
@@ -224,7 +224,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the RDS endpoint output.
 
-Add your screenshot here.
+[RDS Endpoint Output](<screenshots/week-08 Assignment-04-screenshot14.png>)
 
 ---
 
@@ -240,7 +240,7 @@ Use the root Terraform configuration to call the Network, EC2, and RDS modules a
 
 Add a screenshot of VS Code showing the root `main.tf` with the Network, EC2, and RDS module blocks.
 
-Add your screenshot here.
+[Root Module Blocks](<screenshots/week-08 Assignment-04-screenshot15.png>)
 
 ---
 
@@ -248,7 +248,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing values passed from the Network module to the EC2 and RDS modules.
 
-Add your screenshot here.
+[Values Passed Between Modules](<screenshots/week-08 Assignment-04-screenshot16.png>)
 
 ---
 
@@ -256,7 +256,7 @@ Add your screenshot here.
 
 Add a screenshot of VS Code showing the root EC2 public IP and RDS endpoint outputs.
 
-Add your screenshot here.
+[root EC2 public IP and RDS endpoint outputs](<screenshots/week-08 Assignment-04-screenshot17.png>)
 
 ---
 
@@ -272,7 +272,7 @@ Initialize the modular Terraform project, validate the configuration, review the
 
 Add a screenshot of the terminal showing successful `terraform init` output.
 
-Add your screenshot here.
+[Terraform Initialization](<screenshots/week-08 Assignment-04-screenshot18.png>)
 
 ---
 
@@ -280,7 +280,7 @@ Add your screenshot here.
 
 Add a screenshot of the terminal showing successful `terraform validate` output.
 
-Add your screenshot here.
+[Terraform Validation](<screenshots/week-08 Assignment-04-screenshot19.png>)
 
 ---
 
@@ -288,7 +288,7 @@ Add your screenshot here.
 
 Add a screenshot showing the Terraform plan summary and proposed resources.
 
-Add your screenshot here.
+[Terraform Plan](<screenshots/week-08 Assignment-04-screenshot20.png>)
 
 ---
 
@@ -296,7 +296,7 @@ Add your screenshot here.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-Add your screenshot here.
+[Terraform Apply](<screenshots/week-08 Assignment-04-screenshot21.png>)
 
 ---
 
@@ -304,7 +304,7 @@ Add your screenshot here.
 
 Add a screenshot showing the EC2 public IP and RDS endpoint returned by `terraform output`.
 
-Add your screenshot here.
+[Terraform Outputs](<screenshots/week-08 Assignment-04-screenshot22.png>)
 
 ---
 
@@ -320,7 +320,7 @@ Verify that the EC2 and RDS resources were successfully provisioned and confirm 
 
 Add a screenshot of AWS CLI showing the EC2 instance running.
 
-Add your screenshot here.
+[EC2 instance running](<screenshots/week-08 Assignment-04-screenshot23.png>)
 
 ---
 
@@ -328,7 +328,7 @@ Add your screenshot here.
 
 Add a screenshot of AWS CLI showing that RDS is available and not publicly accessible.
 
-Add your screenshot here.
+[Private RDS Available](<screenshots/week-08 Assignment-04-screenshot24.png>)
 
 ---
 
@@ -336,7 +336,7 @@ Add your screenshot here.
 
 Add a screenshot of the EC2 terminal showing the required software version checks and the active Nginx service.
 
-Add your screenshot here.
+[Installed Software and Nginx](<screenshots/week-08 Assignment-04-screenshot25.png>)
 
 ---
 
