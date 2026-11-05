@@ -24,7 +24,7 @@ Prepare your local environment for Terraform deployment by installing Terraform,
 
 Add a screenshot of the terminal showing successful `terraform version` output.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot1.png>)
+[terraform version](<screenshots/week-08 Assignment-03-screenshot1.png>)
 
 ---
 
@@ -32,7 +32,7 @@ Add a screenshot of the terminal showing successful `terraform version` output.
 
 Add a screenshot of the terminal showing successful `az version` output.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot2.png>)
+[az version](<screenshots/week-08 Assignment-03-screenshot2.png>)
 
 ---
 
@@ -40,7 +40,7 @@ Add a screenshot of the terminal showing successful `az version` output.
 
 Add a screenshot of the VS Code Extensions panel showing the HashiCorp Terraform extension installed and enabled.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot3.png>)
+[VS Code Extensions panel](<screenshots/week-08 Assignment-03-screenshot3.png>)
 
 ---
 
@@ -80,7 +80,7 @@ The `cloud-init.sh` file must contain the complete automated React application d
 
 Add a screenshot of VS Code showing the AzureRM provider, resource group, and Network Security Group configuration in `main.tf`.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot4.png>)
+[main.tf screenshot](<screenshots/week-08 Assignment-03-screenshot4.png>)
 
 ---
 
@@ -90,7 +90,7 @@ Add a screenshot of VS Code showing the Linux virtual machine configuration, inc
 
 Ensure that passwords, private keys, account IDs, access tokens, and other sensitive information are hidden.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot5.png>)
+[custom_data configuration, in main.tf](<screenshots/week-08 Assignment-03-screenshot5.png>)
 
 ---
 
@@ -100,7 +100,7 @@ Add a screenshot of VS Code showing the completed `cloud-init.sh` deployment scr
 
 Ensure that no passwords, Azure credentials, access tokens, SSH private keys, or other sensitive information are visible.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot6.png>)
+[cloud-init.s](<screenshots/week-08 Assignment-03-screenshot6.png>)
 
 ---
 
@@ -108,7 +108,7 @@ Ensure that no passwords, Azure credentials, access tokens, SSH private keys, or
 
 Add a screenshot of VS Code showing the public IP `output` block in `main.tf`.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot7.png>)
+[output block in main.tf](<screenshots/week-08 Assignment-03-screenshot7.png>)
 
 ---
 
@@ -124,7 +124,7 @@ Initialize the Terraform working directory and download the required provider co
 
 Add a screenshot of the terminal showing successful `terraform init` output.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot8.png>)
+[terraform init](<screenshots/week-08 Assignment-03-screenshot8.png>)
 
 ---
 
@@ -140,7 +140,7 @@ Review the Terraform execution plan and provision the Azure infrastructure.
 
 Add a screenshot showing the Terraform plan summary and the proposed resources.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot9.png>)
+[Screenshot 9 — Terraform Plan](<screenshots/week-08 Assignment-03-screenshot9.png>)
 
 ---
 
@@ -148,7 +148,7 @@ Add a screenshot showing the Terraform plan summary and the proposed resources.
 
 Add a screenshot showing successful `terraform apply` completion.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot10.png>)
+[Terraform Apply](<screenshots/week-08 Assignment-03-screenshot10.png>)
 
 ---
 
@@ -156,9 +156,9 @@ Add a screenshot showing successful `terraform apply` completion.
 
 Add a screenshot showing the VM public IP address returned by `terraform output`.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot11.png>)
-![alt text](<screenshots/week-08 Assignment-03-screenshot11-1.png>)
-![alt text](<screenshots/week-08 Assignment-03-screenshot11-2.png>)
+[VM Public IP Output 1](<screenshots/week-08 Assignment-03-screenshot11.png>)
+[VM Public IP Output 2](<screenshots/week-08 Assignment-03-screenshot11-1.png>)
+[VM Public IP Output 3](<screenshots/week-08 Assignment-03-screenshot11-2.png>)
 
 ## VM Public IP Address
 
@@ -180,7 +180,7 @@ Connect to the Azure Linux virtual machine and confirm that the cloud-init/user 
 
 Add a screenshot of the SSH terminal showing a successful connection to the Azure VM and evidence that the React application deployment completed.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot12.png>)
+[SSH Connection and Completed React Deployment](<screenshots/week-08 Assignment-03-screenshot12.png>)
 
 ---
 
@@ -188,7 +188,7 @@ Add a screenshot of the SSH terminal showing a successful connection to the Azur
 
 Add a screenshot of the terminal showing that the Nginx service is running successfully.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot13.png>)
+[Nginx Service Status](<screenshots/week-08 Assignment-03-screenshot13.png>)
 
 ---
 
@@ -206,7 +206,7 @@ Add a screenshot of the browser showing the deployed React application successfu
 
 Ensure that the Azure VM public IP is visible in the browser address bar.
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot14.png>)
+[React Application in the Browser](<screenshots/week-08 Assignment-03-screenshot14.png>)
 
 ---
 
@@ -223,7 +223,7 @@ Remove all Azure resources created by Terraform after completing the application
 Add a screenshot of the terminal showing successful `terraform destroy` completion.
 
 
-![alt text](<screenshots/week-08 Assignment-03-screenshot15.png>)
+[Terraform Destroy](<screenshots/week-08 Assignment-03-screenshot15.png>)
 
 ---
 
