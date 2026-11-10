@@ -8,8 +8,8 @@ Part of the DevOps Micro Internship (DMI) with Agentic AI
 
 **Full Name:** Shivam Sharma
 **Cloud Platform:** AWS or Azure  
-**GitHub Repository URL:** https://github.com/shivamsharma-builds/devops-micro-internship-pravinmishra 
-**Public Application URL / Load-Balancer DNS:** [Public URL or DNS here](http://book-review-dev-public-alb-1645492623.eu-north-1.elb.amazonaws.com/)
+**GitHub Repository URL:** `https://github.com/shivamsharma-builds/devops-micro-internship-pravinmishra`
+**Public Application URL / Load-Balancer DNS:** `http://book-review-dev-public-alb-1645492623.eu-north-1.elb.amazonaws.com/`
 
 ---
 
@@ -299,7 +299,7 @@ Add a screenshot showing successful database reads and writes.
 
 ## Public Application URL
 
-**Public Application URL / DNS:** http://book-review-dev-public-alb-1645492623.eu-north-1.elb.amazonaws.com/
+**Public Application URL / DNS:** `http://book-review-dev-public-alb-1645492623.eu-north-1.elb.amazonaws.com/`
 
 ---
 
